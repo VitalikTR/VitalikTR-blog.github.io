@@ -7,3 +7,38 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.header{
+   background-color: #1d2026;
+   color: white;
+}
+
+.container{
+   
+}
+
+/* tablet */
+@media(min-width:768px){
+
+}
+
+
+
+/* laptop */
+@media(min-width:992px){
+    
+}
+
+
+
+
+/* desktop */
+@media(min-width:1200){
+    
+}
+
+
+
+/* mobile */
+@media(max-width:767px){
+    
+}
