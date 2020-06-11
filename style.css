@@ -7,14 +7,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.header{
-   position: sticky;
-   top:0;
-   background-color: #1d2026;
-   color: white;
-   height: 80px;
-}
-
 .container{
     width: 100%;
     padding-left: 15px;
@@ -34,6 +26,24 @@ col{
     padding-right: 15px;
 }
 
+.header{
+    position: sticky;
+    top:0;
+    background-color: #1d2026;
+    color: white;
+ }
+
+ .header-row{
+     flex-direction: column;
+     align-items: center;
+ }
+
+
+
+ /* li {
+    flex: 0 0 auto;
+} */
+ 
 
 
 /* tablet */
@@ -41,7 +51,15 @@ col{
     .container{
         max-width: 720px;
     }
-
+    .header-row{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    .nav-menu{
+        display: flex;
+    }
 }
 
 
@@ -67,5 +85,5 @@ col{
 
 /* mobile */
 @media(max-width:767px){
-    
+     
 }
