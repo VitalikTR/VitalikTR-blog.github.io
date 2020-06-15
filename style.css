@@ -7,6 +7,80 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.header{
+    position: sticky;
+    top:0;
+    background-color: #1d2026;
+    color: white;
+ }
+
+
+
+ .nav-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ad9c9b;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    margin: 0 5px;
+    
+}
+
+ .nav-menu a:hover {
+    border-radius: 5px;
+    border: 2px solid #6b565d;
+    padding: 6px 8px;
+   }
+
+.active:first-child{
+    border-radius: 5px;
+    border: 2px solid #39a492;
+    color: #39a492;
+    padding: 6px 8px;
+}   
+
+.active:hover{
+    background-color: #39a492;
+    color: black;
+    border: 2px solid #39a492 !important;
+}
+
+.row-search{
+    position: relative;
+}
+
+.row-search input[type="text" i]{
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -khtml-border-radius: 5px; 
+    border: 2px solid #3c4147;
+    outline: none;
+    background: inherit;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 7px 0;
+    padding-left: 8px;
+    
+}
+.row-search input::placeholder{
+    color: #ad9c9b;;
+}
+
+
+
+.row-search button{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
 /* tablet */
 @media(min-width:768px){
    
@@ -17,15 +91,14 @@ body{
 
 /* laptop */
 @media(min-width:992px){
-   
 
+
+  
 }
 
 
-
-
 /* desktop */
-@media(min-width:1200){
+@media(min-width:1200px){
     
     
 }
@@ -34,5 +107,20 @@ body{
 
 /* mobile */
 @media(max-width:767px){
-     
+    .menu{
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding: 10px 10px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    
+    .nav-menu a{
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .row-search {
+        width: 290px;
+    }
 }

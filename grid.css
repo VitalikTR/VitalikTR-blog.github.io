@@ -12,22 +12,21 @@
     margin-right: -15px;
 }
 
-.col{
+.header-row [class*="col-md"]{
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.header{
-    position: sticky;
-    top:0;
-    background-color: #1d2026;
-    color: white;
- }
-
  .header-row{
      flex-direction: column;
      align-items: center;
+     height: 120px;
+     justify-content: space-around;
  }
+
+  .nav-menu{
+    display: flex;
+}
 
 
 
@@ -42,11 +41,9 @@
         align-items: center;
         height: 80px;
     }
-    .nav-menu{
-        display: flex;
-    }
+  
+ 
 }
-
 
 
 /* laptop */
@@ -54,6 +51,7 @@
     .container{
         max-width: 960px;
     }
+
 }
 
 
@@ -68,5 +66,8 @@
 
 /* mobile */
 @media(max-width:767px){
-     
+    .col-xs-12{
+        max-width: 100%;
+    }
+   
 }
