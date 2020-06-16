@@ -24,10 +24,10 @@
      justify-content: space-around;
  }
 
-  .nav-menu{
+.nav-menu{
     display: flex;
+    justify-content: center;
 }
-
 
 
 /* tablet */
@@ -51,7 +51,13 @@
     .container{
         max-width: 960px;
     }
-
+    .col-md-2{
+        width: 16.67%;
+    }
+    
+    .col-md-8{
+        width: 66.66%;
+    }
 }
 
 
@@ -66,8 +72,7 @@
 
 /* mobile */
 @media(max-width:767px){
-    .col-xs-12{
-        max-width: 100%;
+    .search{
+        width: 100%;
     }
-   
 }
