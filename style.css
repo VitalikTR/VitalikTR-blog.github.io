@@ -122,6 +122,10 @@ body{
     -o-transform:scale(1.5); 
 }
 
+.box-slider{
+    text-align: center;
+}
+
 /* tablet */
 @media(min-width:768px){
    
