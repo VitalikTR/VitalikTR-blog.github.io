@@ -126,6 +126,60 @@ body{
     text-align: center;
 }
 
+.about{
+    background-color: white;
+}
+
+.title{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #292f36;
+    border-left: 10px solid #e1e6ea;
+    padding-left: 14px;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #b4b5b7;
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.square-numb{
+    width: 50px;
+    height: 50px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    background-color: #39a492;
+    color: #ffe5e5;
+}
+
+h2{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #292f36;
+    margin-bottom: 18px;
+}
+
+
+
+
+
+
 /* tablet */
 @media(min-width:768px){
    
@@ -185,5 +239,17 @@ body{
     .active:first-child{
         padding: 2px 7px;
     }
-
+    .title{
+        font-size: 32px;
+    }
+  
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+        padding-bottom: 15px;
+    }
+    h2 {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
 }
