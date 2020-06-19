@@ -175,8 +175,26 @@ h2{
     margin-bottom: 18px;
 }
 
-
-
+.social{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.social-icons{
+    width: 60px;
+    height: 60px;
+    margin-right: 1px;
+    background-color: #c8cdd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons:hover{
+    background-color: #cfd5d9;
+}
+.sep{
+    border: 1px solid #d0d5d9;
+    margin-top: 100px;
+}
 
 
 
@@ -190,7 +208,11 @@ h2{
     .active:first-child {
         padding: 3px 4px;
     }
+    .social{
+        justify-content: center;
+ }
 }
+
 
 
 
@@ -203,6 +225,9 @@ h2{
     .active:first-child {
         padding: 6px 8px;
     }
+    .social{
+        justify-content: start;
+ }
 }
 
 
