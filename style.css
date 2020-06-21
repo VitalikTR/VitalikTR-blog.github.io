@@ -206,12 +206,9 @@ h2{
     margin-top: 100px;
 }
 
-.box-foto{
-    background-color: #e1e6ea;
-}
 .text-foto{
     padding: 20px;
-    margin-top: -8px;
+    background-color: #e1e6ea;
 }
 .text-foto p{
     font-size: 14px;
@@ -231,7 +228,7 @@ h3{
 .overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(254, 244, 2442, 0.40);
+    background-color: rgba(255, 255, 255, 0.40);
     display: block;
     position: absolute;
     top: 50%;
@@ -279,6 +276,9 @@ h3{
     .social{
         justify-content: center;
  }
+ .section-title{
+    justify-content: center;
+ }
 }
 
 
@@ -296,6 +296,15 @@ h3{
     .social{
         justify-content: start;
  }
+ .section-title{
+    justify-content: start;
+ }
+    .foto{
+        height: 220px;
+    }
+    .foto img{
+        height: 100%;
+    }
 }
 
 
@@ -306,6 +315,9 @@ h3{
     }
     .active:first-child {
         padding: 6px 8px;
+    }
+    .foto{
+        height: 300px;
     }
 }
 
@@ -345,5 +357,18 @@ h3{
         font-size: 14px;
         margin-bottom: 0px;
     }
-   
+   .title{
+       margin: 0 auto;
+   }
+   .text-foto{
+       width: 263px;
+       padding: 5px;
+       text-align: center;
+   }
+   .text-foto p{
+    padding-bottom: 5px;
+}
+.box-foto {
+    margin-bottom: 5px;
+}
 }
