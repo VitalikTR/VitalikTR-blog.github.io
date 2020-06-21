@@ -45,6 +45,9 @@
 .box-text{
     margin-right: -15px;
 }
+.work{
+    padding-bottom: 100px;
+}
 
 /* tablet */
 @media(min-width:768px){
