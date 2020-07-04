@@ -286,7 +286,7 @@ h3{
     display: block;
 }
 .overlay-team h2{
-    /* margin-bottom: 0px; */
+    margin-bottom: 0px;
     color: white;
 }
 .overlay-team .text-foto{
@@ -297,8 +297,9 @@ h3{
     opacity: 1;
 }
 
-.team .row{
+.portfolio-row{
     flex-wrap:wrap;
+    justify-content: center;
 }
 
 /* tablet */
@@ -317,6 +318,9 @@ h3{
  .section-title{
     justify-content: center;
  }
+ .portfolio-foto img{
+    width: 300px;
+}
 }
 
 
@@ -343,6 +347,9 @@ h3{
     .foto img{
         height: 100%;
     }
+    .portfolio-foto img{
+        width: 290px;
+    }
 }
 
 
@@ -356,6 +363,9 @@ h3{
     }
     .foto{
         height: 300px;
+    }
+    .portfolio-foto img{
+        width: 100%;
     }
 }
 
@@ -399,7 +409,7 @@ h3{
        margin: 0 auto;
    }
    .text-foto{
-       width: 263px;
+       /* width: 263px; */
        padding: 5px;
        text-align: center;
    }
@@ -408,5 +418,16 @@ h3{
     }
     .box-foto {
         margin-bottom: 5px;
+    }
+    .overlay-team h2{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .portfolio-foto img{
+        width: 263px;
+    }
+    .portfolio{
+        display: flex;
+        justify-content: center;
     }
 }
