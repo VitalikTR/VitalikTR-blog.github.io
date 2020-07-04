@@ -184,10 +184,11 @@ h2{
     color: #292f36;
     margin-bottom: 18px;
 }
-
 .social{
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .social-icons{
     width: 60px;
@@ -225,7 +226,7 @@ h3{
     position: relative;
     height: 300px;
 }
-.overlay{
+.overlay-work{
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.40);
@@ -250,9 +251,8 @@ h3{
 .overlay-row .social-icons:hover{
     background-color: #4e5a62;
 }
-.box-foto:hover .overlay{
+.box-foto:hover .overlay-work{
     opacity: 1;
-    
 }
 .box-foto:hover .text-foto{
     background-color:#3a454d;
@@ -260,8 +260,46 @@ h3{
 }
 .box-foto:hover .text-foto h3{
     color: white;
-}                      
+}   
+.team{
+    background-color: #3a454d;
+}  
+.portfolio-foto{
+    position: relative;
+    cursor: pointer;
+}
+.overlay-team{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.plus{
+    width: 100%;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.overlay-team .overlay-row{
+    display: block;
+}
+.overlay-team h2{
+    /* margin-bottom: 0px; */
+    color: white;
+}
+.overlay-team .text-foto{
+    background-color: #292f36;
+    padding-top: 22px;
+}
+.portfolio:hover .overlay-team{
+    opacity: 1;
+}
 
+.team .row{
+    flex-wrap:wrap;
+}
 
 /* tablet */
 @media(min-width:768px){
@@ -367,8 +405,8 @@ h3{
    }
    .text-foto p{
     padding-bottom: 5px;
-}
-.box-foto {
-    margin-bottom: 5px;
-}
+    }
+    .box-foto {
+        margin-bottom: 5px;
+    }
 }

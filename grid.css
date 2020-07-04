@@ -48,6 +48,9 @@
 .work{
     padding-bottom: 100px;
 }
+.col-md-4{
+    padding-bottom: 30px;
+}
 
 /* tablet */
 @media(min-width:768px){
@@ -96,15 +99,14 @@
    
 }
 
-
 /* desktop */
 @media(min-width:1200px){
     .container{
         max-width: 1170px;
     }
     .col-md-12{
-        margin-top: 80px;
-        margin-bottom: 60px;
+        padding-top: 80px;
+        padding-bottom: 60px;
     }
 }
 
