@@ -74,7 +74,14 @@
     .box-foto{
         margin-bottom: 10px;
     }
+    .show-more {
+        width: 100%;
+    }
+    .btn-show-more {
+        width: 100%;
+    }
 }
+
 
 
 /* laptop */
@@ -94,7 +101,9 @@
     }
     .foto-row {
         flex-wrap: nowrap;
-        
+    }
+    .show-more{
+        width: max-content;
     }
    
 }
@@ -147,5 +156,11 @@
     }
     .work {
         padding-bottom: 5px;
+    }
+    .col-md-4 {
+        padding-bottom: 10px;
+    }
+    .btn-show-more{
+        width: 100%;
     }
 }

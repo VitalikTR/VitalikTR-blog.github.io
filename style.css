@@ -296,10 +296,33 @@ h3{
 .portfolio:hover .overlay-team{
     opacity: 1;
 }
-
 .portfolio-row{
     flex-wrap:wrap;
     justify-content: center;
+}
+.show-more-row{
+    justify-content: center;
+}
+.show-more{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-show-more{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* tablet */
@@ -321,6 +344,12 @@ h3{
  .portfolio-foto img{
     width: 300px;
 }
+.show-more {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width: 87%;
+}
+
 }
 
 
@@ -349,6 +378,9 @@ h3{
     }
     .portfolio-foto img{
         width: 290px;
+    }
+    .show-more {
+        width: auto;
     }
 }
 
@@ -429,5 +461,16 @@ h3{
     .portfolio{
         display: flex;
         justify-content: center;
+    }
+    .btn-show-more{
+        font-size: 20px;
+    }
+    .show-more {
+        margin-bottom: 10px;
+        margin-top: 0px;
+        width: 82%;
+    }
+    .show-more-row{
+        flex-direction: row;
     }
 }
