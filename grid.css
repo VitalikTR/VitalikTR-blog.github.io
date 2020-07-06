@@ -80,6 +80,9 @@
     .btn-show-more {
         width: 100%;
     }
+    .slider .col-md-7 {
+        width: 100%;
+    }
 }
 
 
@@ -105,7 +108,9 @@
     .show-more{
         width: max-content;
     }
-   
+    .slider .col-md-7 {
+        width: 58.33%;
+    }
 }
 
 /* desktop */

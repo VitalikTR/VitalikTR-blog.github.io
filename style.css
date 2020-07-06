@@ -122,10 +122,37 @@ body{
     -ms-transform:scale(1.5); 
     -o-transform:scale(1.5); 
 }
-
-.box-slider{
-    text-align: center;
+.slider{
+    display: flex;
+    align-items: center;
+    height: 660px;
+    /* padding-top: 225px;
+    padding-bottom: 165px; */
+    background-image: url(images/slider.png);
 }
+.btn-style{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-slider .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.box-slider h2{
+    /* padding-top: 225px; */
+    padding-bottom: 14px;
+    color: white;
+    font-size: 36px;
+}
+.slider .btn-style{
+    margin-top:40px;
+    margin-right: 11px;
+}
+.box-slider p{
+    line-height: 1.6;
+}
+
 
 .about{
     background-color: white;
@@ -177,11 +204,8 @@ span{
 }
 
 h2{
-    font-family: 'Quattrocento Sans', sans-serif;
     font-size: 18px;
-    font-weight: bold;
     text-transform: uppercase;
-    color: #292f36;
     margin-bottom: 18px;
 }
 .social{
@@ -303,7 +327,7 @@ h3{
 .show-more-row{
     justify-content: center;
 }
-.show-more{
+.btn-style{
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
@@ -313,7 +337,7 @@ h3{
     border-radius: 5px;
     cursor: pointer;
 }
-.btn-show-more{
+.btn{
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -324,6 +348,7 @@ h3{
     text-transform: uppercase;
     cursor: pointer;
 }
+
 
 /* tablet */
 @media(min-width:768px){
@@ -344,10 +369,17 @@ h3{
  .portfolio-foto img{
     width: 300px;
 }
-.show-more {
+.btn-style{
     margin-bottom: 10px;
     margin-top: 0px;
     width: 87%;
+}
+.box-slider h2 {
+    
+    text-align: center;
+}
+.box-slider p {
+    text-align: center;
 }
 
 }
@@ -379,8 +411,16 @@ h3{
     .portfolio-foto img{
         width: 290px;
     }
-    .show-more {
+    .btn-style{
+        margin-bottom: 60px;
+        margin-top: 15px;
         width: auto;
+    }
+    .box-slider h2 {
+        text-align: left;
+    }
+    .box-slider p {
+        text-align: left;
     }
 }
 
@@ -462,15 +502,28 @@ h3{
         display: flex;
         justify-content: center;
     }
-    .btn-show-more{
+    .btn{
         font-size: 20px;
     }
-    .show-more {
+   .btn-style {
         margin-bottom: 10px;
         margin-top: 0px;
         width: 82%;
     }
     .show-more-row{
         flex-direction: row;
+    }
+    .slider .btn-style {
+        margin-top: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .box-slider h2 {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    .box-slider p {
+        text-align: center;
     }
 }
