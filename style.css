@@ -15,9 +15,7 @@ body{
     z-index: 1;
  }
 
-
-
- .nav-menu a{
+ .menu-item{
     text-decoration: none;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
@@ -25,11 +23,10 @@ body{
     color: #ad9c9b;
     text-transform: uppercase;
     padding: 8px 10px;
-    margin: 0 5px;
-    
+    margin: 0 5px; 
 }
 
- .nav-menu a:hover {
+ .nav-menu .menu-item:hover {
     border-radius: 5px;
     border: 2px solid #6b565d;
     padding: 6px 8px;
@@ -53,13 +50,13 @@ body{
     border: 2px solid #39a492 !important;
 }
 
-.row-search form{
+.form-search {
     width: 100%;
     position: relative;
     margin: 0 auto;
 }
 
-.row-search input[type="text"]{
+.form-search input[type="text"]{
     width: 100%;
     border-radius: 5px;
     -webkit-border-radius: 5px; 
@@ -78,20 +75,19 @@ body{
     padding-right: 30px;
 }
 
-
-.row-search input::-webkit-input-placeholder {
+.form-search input::-webkit-input-placeholder {
     color: #ad9c9b;
 }
        
-.row-search  input::-moz-placeholder {  
+.form-search  input::-moz-placeholder {  
     color: #ad9c9b;
 }
      
-.row-search input:-ms-input-placeholder {  
+.form-search input:-ms-input-placeholder {  
      color: #ad9c9b;
 }
 
-.row-search button{
+.btn-search{
     display: block;
     position: absolute;
     border: none;
@@ -107,15 +103,15 @@ body{
     cursor: pointer;
 }
 
-.row-search input:hover {
+.form-search input:hover {
     border-color: #39a492;
 }
 
-.row-search input:focus{
+.form-search input:focus{
     border-color: #39a492;
 }
 
-.row-search button:hover{
+.form-search .btn-search:hover{
     transform: scale(1.7);
     -webkit-transform:scale(1.5);
     -moz-transform:scale(1.5); 
