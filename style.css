@@ -128,18 +128,12 @@ body {
     background-image: url(images/slider.png);
 }
 
-/* .btn-style{
-    display: flex;
-    flex-direction: column;
-} */
-
 .row-btn {
     margin-left: 0;
     margin-right: 0;
 }
 
 .title-slider {
-    /* padding-top: 225px; */
     color: white !important;
     border: none !important;
     padding-left: 0 !important;
@@ -197,9 +191,10 @@ body {
     background-color: white;
 }
 
-span {
+.quote{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    color: #8d8f92;
 }
 
 .square-numb {
