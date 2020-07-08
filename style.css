@@ -208,11 +208,16 @@ body {
     background-color: #39a492;
     color: #ffe5e5;
 }
-
-h2 {
-    font-size: 18px;
+.subtitle {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #292f36;
     text-transform: uppercase;
-    /* margin-bottom: 18px; */
+}
+.text-about{
+    padding-bottom: 0;
 }
 
 .social {
@@ -250,13 +255,7 @@ h2 {
     font-size: 14px;
 }
 
-h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    color: #292f36;
-}
+
 
 .foto {
     display: block;
@@ -383,10 +382,13 @@ h3 {
         text-align: center;
         padding-bottom: 15px;
     }
-    .social {
-        justify-content: center;
+    .title-section {
+        margin: 0 auto;
     }
-    .section-title {
+    .text-about {
+        padding-bottom: 10px;
+    }
+    .social {
         justify-content: center;
     }
     .portfolio-foto img {
@@ -419,12 +421,13 @@ h3 {
     .text-slider {
         text-align: left;
     }
+    .title-section {
+        margin: 0;
+    }   
     .social {
         justify-content: start;
     }
-    .section-title {
-        justify-content: start;
-    }
+  
     .foto {
         height: 220px;
     }
@@ -445,6 +448,9 @@ h3 {
     }
     .active:first-child {
         padding: 6px 8px;
+    }
+    .text-about{
+        padding-bottom: 40px;
     }
     .foto {
         height: 300px;
@@ -506,7 +512,19 @@ h3 {
     .btn {
         font-size: 18px;
     }
-  
+    .title-section{
+        font-size: 25px;
+        margin: 0 auto;
+    }
+    .subtitle {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 2px;
+    }
+    .text-about {
+        font-size: 14px;
+        line-height: 1.4;
+    }
     .text-foto {
         /* width: 263px; */
         padding: 5px;
