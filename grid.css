@@ -133,6 +133,10 @@
     .search {
         width: 100%;
     }
+    .header-row {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .col-md-12 {
         padding-top: 15px;
         padding-bottom: 20px;
