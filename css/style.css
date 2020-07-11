@@ -422,13 +422,12 @@ body {
     .portfolio-foto img {
         width: 300px;
     }
-    .show-more {
-        width: 100%;
+    .button-show-more {
+        width: fit-content;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
-    .btn-show-more {
-        width: 100%;
-    }
-   
+      
 }
 
 /* laptop */
@@ -473,8 +472,10 @@ body {
     .portfolio-foto img {
         width: 290px;
     }
-    .show-more {
-        width: max-content;
+    .button-show-more {
+        width: fit-content;
+        margin-top: 30px;
+        margin-bottom: 60px;
     }
  
 }
@@ -598,8 +599,8 @@ body {
         display: flex;
         justify-content: center;
     }
-    .btn-show-more {
-        width: 100%;
+    .button-show-more {
+        flex: 0 0 82%;
     }
      .show-more-row {
         flex-direction: row;
