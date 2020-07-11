@@ -132,7 +132,7 @@ body {
     height: 660px;
     /* padding-top: 225px;
     padding-bottom: 165px; */
-    background-image: url(images\slider.png);    
+    background-image: url(../images/slider.png);    
 }
 
 .row-btn {
