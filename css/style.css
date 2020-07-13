@@ -325,6 +325,7 @@ body {
 .work {
     padding-bottom: 100px;
 }
+
 /*---------------section team-----------------*/ 
 
 .team {
@@ -442,7 +443,36 @@ body {
     padding-bottom: 90px;
 }
 
+/*---------------section contact-----------------*/ 
 
+.contact-row{
+    flex-direction: column;
+}
+.contact-information-row{
+    display: flex;
+    margin-top: -20px;
+}
+.subtitle-contact {
+    font-size: 20px;
+    padding-bottom: 40px;
+    border: none;
+    padding-left: 0;
+}
+.button-contact{
+    width: max-content;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: #39a492;
+}
+.text-contact {
+    padding-bottom: 35px;
+}
+.text-contact:last-child{
+    padding-bottom: 0px;
+}
+.map{
+    width: 100%;
+}
 
 /* tablet */
 
@@ -501,6 +531,20 @@ body {
     }
     .text-features {
         padding-bottom: 0px;
+    }
+    .subtitle-contact {
+        padding-bottom: 10px !important;
+        text-align: center;
+    }
+    .text-contact {
+        padding-bottom: 15px !important;
+    }
+    .button-contact {
+     text-align: center;
+    }
+    .contact-information-row {
+        display: block;
+        margin-top: 0px;
     }
 }
 
@@ -561,6 +605,17 @@ body {
     .text-features {
         padding-bottom: 40px;
     }
+    .contact-information-row{
+        display: flex;
+    }
+    .subtitle-contact {
+        padding-bottom: 20px !important;
+        text-align: left;
+    }
+    .text-contact:last-child{
+        padding-bottom: 0px !important;
+    }
+
  
 }
 
@@ -587,6 +642,9 @@ body {
     }
     .text-features {
         padding-bottom: 90px;
+    }
+    .subtitle-contact {
+        padding-bottom: 40px !important;
     }
 }
 
@@ -708,6 +766,14 @@ body {
     .subtitle-features {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .contact-information-row{
+        display: block;
+        margin-top: inherit;
+    }
+    .subtitle-contact {
+        padding-bottom: 10px;
+        text-align: center;
     }
  
   
