@@ -71,7 +71,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 0;
+       
     }
     
 }
@@ -108,7 +108,7 @@
     .col-md-6 {
         width: 50%;
         justify-content: end;
-        padding: 0 15px;
+        
     }
 }
 
