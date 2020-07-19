@@ -176,7 +176,7 @@ body {
     justify-content: center;
     margin-bottom: 60px;
     margin-top: 30px;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;
@@ -192,6 +192,7 @@ body {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+    padding: 0;
 }
 
 /*-------------  section about  -----------------*/
@@ -444,37 +445,37 @@ body {
 }
 
 /*---------------section contact-----------------*/ 
-
-.contact-row{
-    flex-direction: column;
-}
-.contact-information-row{
-    display: flex;
-    margin-top: -20px;
-}
-.subtitle-contact {
-    font-size: 20px;
-    padding-bottom: 40px;
-    border: none;
-    padding-left: 0;
-}
-.button-contact{
-    width: max-content;
-    margin-bottom: 0;
-    margin-top: 0;
-    background: #39a492;
-}
-.text-contact {
-    padding-bottom: 35px;
-}
-.text-contact:last-child{
-    padding-bottom: 0px;
-}
 .map{
     width: 100%;
 }
+.contact-row {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.subtitle-contact{
+    font-size: 20px;
+    border: none;
+    padding-left: 0;
+    padding-bottom: 40px;
+}
+.text-contact {
+    line-height: 1.4;
+    font-size: 16px;
+    padding-bottom: 35px;
+}
+.text-contact:last-child{
+    padding-bottom: 0;
+}
+.button-contact{
+    background-color: #39a492;
+    margin: 0;
+}
+
 /*---------------footer-----------------*/
- 
+
+.footer{
+    background-color:#1d2026;
+}
 
 /* tablet */
 
@@ -501,9 +502,7 @@ body {
         text-align: center;
         padding-bottom: 15px;
     }
-    .title-section {
-        margin: 0 auto;
-    }
+   
     .text-about {
         padding-bottom: 10px;
     }
@@ -534,20 +533,11 @@ body {
     .text-features {
         padding-bottom: 0px;
     }
-    .subtitle-contact {
-        padding-bottom: 10px !important;
-        text-align: center;
-    }
-    .text-contact {
-        padding-bottom: 15px !important;
-    }
     .button-contact {
-     text-align: center;
+        margin-top: 10px;
     }
-    .contact-information-row {
-        display: block;
-        margin-top: 0px;
-    }
+
+  
 }
 
 /* laptop */
@@ -607,16 +597,10 @@ body {
     .text-features {
         padding-bottom: 40px;
     }
-    .contact-information-row{
-        display: flex;
+    .button-contact {
+        margin-top: 0;
     }
-    .subtitle-contact {
-        padding-bottom: 20px !important;
-        text-align: left;
-    }
-    .text-contact:last-child{
-        padding-bottom: 0px !important;
-    }
+
 
  
 }
@@ -645,9 +629,7 @@ body {
     .text-features {
         padding-bottom: 90px;
     }
-    .subtitle-contact {
-        padding-bottom: 40px !important;
-    }
+   
 }
 
 /* mobile */
@@ -705,7 +687,6 @@ body {
   
     .title-section{
         font-size: 25px;
-        margin: 0 auto;
     }
     .subtitle {
         text-align: center;
@@ -769,14 +750,15 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .contact-information-row{
-        display: block;
-        margin-top: inherit;
+    .contact-row{
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .subtitle-contact {
         padding-bottom: 10px;
         text-align: center;
     }
+
  
   
 }

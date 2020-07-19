@@ -67,13 +67,15 @@
     .slider .col-md-7 {
         width: 100%;
     }
+    .contact-row{
+        display: block;
+    }
     .col-sm-6{
         width: 100%;
         display: flex;
         justify-content: center;
-       
     }
-    
+  
 }
 
 /* laptop */
@@ -105,11 +107,14 @@
     .slider .col-md-7 {
         width: 58.33%;
     }
-    .col-md-6 {
-        width: 50%;
-        justify-content: end;
-        
+    .contact-row{
+        display: flex;
     }
+    .col-md-6{
+        width: 50%;
+        justify-content: start;
+    }
+   
 }
 
 /* desktop */
@@ -163,5 +168,6 @@
     .col-xs-6{
         width: 100%;
     }
+  
       
 }
