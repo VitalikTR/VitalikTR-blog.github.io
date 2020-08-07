@@ -145,10 +145,7 @@ body .current a {
     padding-top: 225px;
     padding-bottom: 165px;
 }
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    left: 535px;
-    bottom: 30px;
-}
+
 .swiper-pagination-bullet {
     width: 13px;
     height: 13px;
@@ -554,6 +551,9 @@ body .current a {
         text-align: center;
         padding-bottom: 15px;
     }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        text-align: center;
+    }
    
     .text-about {
         padding-bottom: 10px;
@@ -630,6 +630,7 @@ body .current a {
     .text-slider {
         text-align: left;
     }
+  
     .title-section {
         margin: 0;
     }   
@@ -700,6 +701,10 @@ body .current a {
     .text-features {
         padding-bottom: 90px;
     }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 30px;
+        left: 535px;
+    }
    
 }
 
@@ -725,10 +730,10 @@ body .current a {
         padding: 2px 7px;
     }
     .slider{
-        height: 200px;
+        height: 220px;
     }
     .swiper-container {
-        height: 200px;
+        height: 220px;
     }
     .title-slider {
         font-size: 18px;
