@@ -525,7 +525,7 @@ body .current a {
 
 @media(min-width:768px) {
     .menu-item {
-        margin: -4px;
+        margin: 0px;
     }
     .active:first-child {
         padding: 3px 4px;
@@ -592,6 +592,9 @@ body .current a {
     .button-contact {
         margin-top: 10px;
     }
+    body .current a {
+        padding: 4px 2px;
+    }
 }
 
 /* laptop */
@@ -599,7 +602,7 @@ body .current a {
 @media(min-width:992px) {
     .menu-item {
         padding: 8px 10px;
-        margin: 0;
+        margin: 5px;
     }
     .active:first-child {
         padding: 6px 8px;
@@ -667,14 +670,15 @@ body .current a {
     .button-contact {
         margin-top: 0;
     } 
+    body .current a {
+        padding: 6px 8px;
+    }
 }
 
 /* desktop */
 
 @media(min-width:1200px) {
-    .menu-item {
-        margin: 0 5px;
-    }
+    
     .active:first-child {
         padding: 6px 8px;
     }
