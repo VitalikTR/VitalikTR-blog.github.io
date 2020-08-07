@@ -122,6 +122,7 @@ body {
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+    outline: none;
 }
 
 body .current a {
@@ -527,6 +528,12 @@ body .current a {
     .active:first-child {
         padding: 3px 4px;
     }
+    .search{
+        padding: 0;
+    }
+    .form-search input[type="text"] {
+        font-size: 11px;
+    }
     .slider {
        height: 225px;
     }
@@ -603,6 +610,13 @@ body .current a {
     .menu-item {
         padding: 8px 10px;
         margin: 5px;
+    }
+    .search{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .form-search input[type="text"] {
+        font-size: 14px;
     }
     .active:first-child {
         padding: 6px 8px;
