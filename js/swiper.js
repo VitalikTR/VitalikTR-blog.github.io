@@ -1,6 +1,7 @@
 /*------ Swiper Fade Effect ------*/
 
 var swiper = new Swiper('.swiper-container', {
+    initialSlide: 1,
     spaceBetween: 30,
     effect: 'fade',
     pagination: {

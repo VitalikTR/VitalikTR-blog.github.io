@@ -1,4 +1,4 @@
 $('#nav').onePageNav({
-    currentClass:"current"
+    currentClass:"current",
 })
 
