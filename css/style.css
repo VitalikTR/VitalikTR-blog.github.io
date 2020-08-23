@@ -407,6 +407,9 @@ body .current a {
 .show-more-row {
     justify-content: center;
 }
+.button-show-more:hover{
+    background-color: #39a492;
+}
 
 /*-------------  section service  ---------------*/
 .section-row{
