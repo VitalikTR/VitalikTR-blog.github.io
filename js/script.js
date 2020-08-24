@@ -1,6 +1,3 @@
-// var top_offset = $('header').height() -1;
-
-
 $('#nav').onePageNav({
     currentClass:"current",
     scrollSpeed: 700,
