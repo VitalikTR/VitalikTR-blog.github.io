@@ -5,6 +5,36 @@ $('#nav').onePageNav({
     scrollOffset: $('header').height() -1,   
 })
 
+    let sendMessage = document.querySelectorAll(".btn-send-message");
+    // console.log(sendMessage);
+    let modal = document.querySelector(".modal-send-message")
+    // console.log(modal);
+    sendMessage.forEach(function(btn){
+        btn.addEventListener("click", function(){
+            modal.classList.add("show")
+                modal.classList.remove("hide")
+        })
+    })
+
+    function openModal() {
+        modal.classList.add("show")
+            modal.classList.remove("hide")
+    }
+
+    function closeModal() {
+        modal.classList.add("hide")
+            modal.classList.remove("show")
+    }
+
+    // modal.addEventListener("click",closeModal);
+    modal.addEventListener("click", function(e){
+        if (e.target === modal) {
+            closeModal()
+    }
+})
+
+
+
 // $(document).ready(function(){
 //     $('a[href^="#"]').click( function(){ // если в href начинается с # , то ловим клик
 //     // проверим существование элемента чтобы избежать ошибки
