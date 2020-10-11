@@ -136,18 +136,24 @@ body .current a {
 
 .swiper-container{
     width: 100%;
-    height: 660px;
     position: absolute;
 }
 
-.slider > .container {
-    position: relative;
-    z-index: 10;
-    padding-top: 225px;
-    padding-bottom: 165px;
+.img-slider{
+    max-width: 100%;
+    height: 100%;
 }
 
-.swiper-pagination-bullet {
+.container-content-slider {
+    position: relative;
+    z-index: 5;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet{
     width: 13px;
     height: 13px;
     border: 2px solid white;
@@ -360,6 +366,9 @@ body .current a {
 .portfolio-foto {
     position: relative;
     cursor: pointer;
+}
+.portfolio-foto > img {
+    width: 100%;
 }
 
 .overlay-team {
@@ -593,15 +602,8 @@ body .current a {
     .form-search input[type="text"] {
         font-size: 11px;
     }
-    .slider {
-       height: 225px;
-    }
-    .slider > .container {
-       padding-top: 0px;
-       padding-bottom: 0px;
-    }
-    .swiper-container {
-       height: 225px;
+    .swiper-container,.container-content-slider {
+       height: 345px;
     }
     .button-slider {
         margin-bottom: 15px;
@@ -616,9 +618,6 @@ body .current a {
     .text-slider {
         text-align: center;
         padding-bottom: 15px;
-    }
-    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-        text-align: center;
     }
    
     .text-about {
@@ -680,14 +679,7 @@ body .current a {
     .active:first-child {
         padding: 6px 8px;
     }
-    .slider{
-        height: 660px;
-    }
-    .slider > .container {
-        padding-top: 225px;
-        padding-bottom: 165px;
-     }
-     .swiper-container {
+    .swiper-container,.container-content-slider {
         height: 660px;
      }
     .button-slider {
@@ -703,7 +695,10 @@ body .current a {
     .text-slider {
         text-align: left;
     }
-  
+     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 30px;
+        left: 430px;
+    }
     .title-section {
         margin: 0;
     }   
@@ -759,6 +754,10 @@ body .current a {
     .title-slider {
         font-size: 36px;
     }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 30px;
+        left: 535px;
+    }
     .text-about{
         padding-bottom: 40px;
     }
@@ -774,11 +773,6 @@ body .current a {
     .text-features {
         padding-bottom: 90px;
     }
-    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-        bottom: 30px;
-        left: 535px;
-    }
-   
 }
 
 /* mobile */
@@ -802,43 +796,27 @@ body .current a {
     .active:first-child {
         padding: 2px 7px;
     }
-    .slider{
-        height: 220px;
+    .container-content-slider,.swiper-container{
+        height: 270px;
     }
-    .swiper-container {
-        height: 220px;
-    }
+
     .title-slider {
         font-size: 18px;
-        padding-top: 10px;
         padding-bottom: 0;
         text-align: center;
-    }
-    .slider > .container {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .text {
-        text-align: center;
-        padding-bottom: 10px;
     }
     .text-slider {
         font-size: 14px;
         line-height: 1.4;
     }
-    .button {
-        margin-top: 0;
-        margin-right: 0;
-        width: 100%;
-    }
     .button-slider {
         margin-bottom: 10px;
         padding: 5px; 
     }
-    .btn {
-        font-size: 18px;
+    .text {
+        text-align: center;
+        padding-bottom: 10px;
     }
-  
     .title-section{
         font-size: 25px;
     }
@@ -854,7 +832,6 @@ body .current a {
         padding-bottom: 5px;
     }
     .member-info {
-        /* width: 263px; */
         padding: 10px;
         text-align: center;
     }
@@ -876,9 +853,6 @@ body .current a {
     .overlay-team h2 {
         margin-bottom: 20px;
         font-size: 18px;
-    }
-    .portfolio-foto > img {
-        width: 263px;
     }
     .portfolio {
         display: flex;

@@ -40,9 +40,9 @@
     align-items: flex-end;
 }
 .copyright-row{
-    justify-content: space-between;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+   
     height: 95px;
 }
 
@@ -157,6 +157,10 @@
         margin-left: -15px;
         margin-right: -15px;
     }
+    .row-btn{
+        flex-direction: row;
+        justify-content: center;
+    }
     .col-md-5 {
         width: 100%;
     }
@@ -173,8 +177,7 @@
     }
     .col-xs-6{
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
-
-  
-      
 }
