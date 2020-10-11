@@ -657,6 +657,9 @@ body .current a {
     .button-contact {
         margin-top: 10px;
     }
+    .copyright-text{
+        font-size: 14px;
+    }
     body .current a {
         padding: 4px 2px;
     }
@@ -860,6 +863,7 @@ body .current a {
     }
     .button-show-more {
         flex: 0 0 82%;
+        margin: 5px 0 10px 0;
     }
      .show-more-row {
         flex-direction: row;
