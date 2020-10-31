@@ -5,10 +5,11 @@ $('#nav').onePageNav({
     scrollOffset: $('header').height() -1,   
 })
 
-    let sendMessage = document.querySelectorAll(".btn-send-message");
+    let sendMessage = document.querySelectorAll(".button-contact");
     // console.log(sendMessage);
     let modal = document.querySelector(".modal-send-message")
     // console.log(modal);
+
     sendMessage.forEach(function(btn){
         btn.addEventListener("click", function(){
             modal.classList.add("show")
