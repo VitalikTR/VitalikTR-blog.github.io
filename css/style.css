@@ -505,6 +505,17 @@ body .current a {
 .button-contact{
     background-color: #39a492;
     margin: 0;
+    border-color: #39a492;;
+    box-shadow: 0 0 40px 40px #39a492 inset, 0 0 0 0 #39a492;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.button-contact:hover {
+    box-shadow: 0 0 10px 0 #39a492 inset, 0 0 10px 4px #39a492;
+    background-color: #fff;
+}
+.button-contact:hover .btn-send-message{
+    color:#39a492;
 }
 
 /*---------------footer-----------------*/
@@ -538,45 +549,118 @@ body .current a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.30);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 100;
     display: none;
 }
-
-.modal-bloc {
+.modal-content {
     width: 555px;
-    height: 330px;
+    /* height: 400px; */
+    position: absolute;
     background-color: #fff;
-    padding: 30px;
-    margin: 80px auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.form-input{
+.modal-form{
+    width: 100%;
+    text-align: center;
+}
+
+.row-form-input{
     display: flex;
     justify-content: space-between;
-}
-.modal-send-message input{
-    width: 240px;
-    height: 45px;
-    margin: 10px 0;
+    margin-bottom: 30px;
 }
 
+.form-fields {
+    width: 46.61%;
+}
+
+.modal-close {
+    padding: 0 0 10px 0;
+    font-size: 1.1em;
+    text-align: right;
+    margin-bottom: 10px;
+}
 .name-fields {
-    padding-left: 10px;
     font-size: 14px;
     font-family: 'Quattrocento Sans', sans-serif;
     font-weight: bold;
     color: #ad9c9b;
+    margin-bottom: 10px;
+    text-align: left;
 }
+.modal-send-message input[type="text"]{
+    width: 100%;
+    font-size: 21px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    padding: 8px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: 2px solid #7e8389;
+    outline-color:#39a492;
+    background-color: #eaeef1;
+}
+
 .text-send .name-fields{
     margin-top: 20px;
 }
-.text-send textarea {
+.text-send textarea{
     width: 100%;
     height: 160px;
+    font-size: 21px;
+    font-family: 'Quattrocento Sans', sans-serif;
     resize: none;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 5px;  
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: 2px solid #7e8389;
+    outline-color:#39a492;
+    background-color: #eaeef1; 
+}
+.text-send{
+    margin-bottom: 7px;
+}
+.btn-send-message-modal{
+    color: black;
+    padding: 5px 25px;
+    font-size: 21px;
+    background-color: #607D8B;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-send-message-modal::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transition: all 1s ease;
+    width: 150%;
+    height: 0%;
+    background: #39a492;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+.btn-send-message-modal:hover{
+    color: #fff;  
+}
+
+.btn-send-message-modal:hover::after {
+    height: 300% ;  
 }
 
 .hide {
