@@ -129,8 +129,8 @@ body .current a {
     border-radius: 5px;
     border: 2px solid #6b565d;
     padding: 6px 8px;
+    box-shadow: 0 0px 20px 0 #6b565d;
 }
-
 
 /*---------------  slider  -----------------*/
 
