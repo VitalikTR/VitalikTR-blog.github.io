@@ -580,10 +580,9 @@ body .current a {
 }
 
 .modal-close {
-    padding: 0 0 10px 0;
     font-size: 1.1em;
     text-align: right;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .name-fields {
     font-size: 14px;
@@ -883,7 +882,6 @@ body .current a {
     .container-content-slider,.swiper-container{
         height: 270px;
     }
-
     .title-slider {
         font-size: 18px;
         padding-bottom: 0;
@@ -985,5 +983,19 @@ body .current a {
     .nav-menu .menu-item:hover {
        padding: 2px 7px;
     }
+    /*----------Modal-----------*/
+    .modal-content {
+        width: 80%;
+    }
+    .row-form-input {
+        display:block;
+        margin: 0;
+    }
+    .form-fields {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /*----------Modal-----------*/
 }
 
