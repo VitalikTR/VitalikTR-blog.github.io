@@ -506,9 +506,6 @@ body .current a {
     background-color: #39a492;
     margin: 0;
     border-color: #39a492;;
-    box-shadow: 0 0 40px 40px #39a492 inset, 0 0 0 0 #39a492;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
 }
 .button-contact:hover {
     box-shadow: 0 0 10px 0 #39a492 inset, 0 0 10px 4px #39a492;
@@ -647,7 +644,7 @@ body .current a {
     display: block;
     top: 50%;
     left: 50%;
-    transition: all 1s ease;
+    transition: all 0,5s ease;
     width: 150%;
     height: 0%;
     background: #39a492;
