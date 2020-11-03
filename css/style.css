@@ -567,7 +567,7 @@ body .current a {
     -webkit-transition: all ease 0.8s;
      -moz-transition: all ease 0.8s;
      -o-transition: all ease 0.8s;
-    transform: translate(0px, -200%);
+    transform: perspective(500px) translate(0px, -400px) rotateX(45deg);;
 }
 .modal-form{
     width: 100%;
