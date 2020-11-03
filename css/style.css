@@ -684,9 +684,6 @@ body .current a {
      -o-transition: all ease 0.8s;
 }
 
-.hide-animate-modal{
-    
-}
 .show-animate-modal{
     opacity: 1;
     visibility: visible;

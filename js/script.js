@@ -16,7 +16,6 @@ $('#nav').onePageNav({
             modal.classList.add("show")
                 modal.classList.remove("hide")
                     animationModal.classList.add("show-animate-modal")
-                        animationModal.classList.remove("hide-animate-modal")
         })
     })
 
@@ -24,13 +23,11 @@ $('#nav').onePageNav({
         modal.classList.add("show")
             modal.classList.remove("hide")
                 animationModal.classList.add("show-animate-modal")
-                    animationModal.classList.remove("hide-animate-modal")
     }
 
     function closeModal() {
         modal.classList.add("hide")
             modal.classList.remove("show")
-                animationModal.classList.add("hide-animate-modal")
                     animationModal.classList.remove("show-animate-modal")
     }
 
