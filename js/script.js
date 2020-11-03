@@ -2,7 +2,7 @@ $('#nav').onePageNav({
     currentClass:"current",
     scrollSpeed: 700,
     scrollThreshold: 0.5, 
-    scrollOffset: $('header').height() -1,   
+    scrollOffset: $('header').height(),   
 })
 
     let sendMessage = document.querySelectorAll(".button-contact");

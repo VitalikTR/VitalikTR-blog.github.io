@@ -27,32 +27,32 @@ body {
     font-weight: 600;
     color: #ad9c9b;
     text-transform: uppercase;
-    padding: 8px 10px;
+    padding: 0px 10px;
     margin: 0 5px;
+    display: inline-block;
+    line-height: 26px;
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
 .nav-menu .menu-item:hover {
-    border-radius: 5px;
-    border: 2px solid #6b565d;
-    padding: 6px 8px;
-    -webkit-transition: all .45s cubic-bezier(0.15, 1.07, 0.15, 1.07);
-    -moz-transition: .45s cubic-bezier(0.15, 1.07, 0.15, 1.07);
-    -ms-transition: .45s cubic-bezier(0.15, 1.07, 0.15, 1.07);
-    -o-transition: .45s cubic-bezier(0.15, 1.07, 0.15, 1.07);
-    transition: .45s cubic-bezier(0.15, 1.07, 0.15, 1.07);
+    border-color: #6b565d;
+    -webkit-transition: all .45s cubic-bezier(0.33, 0.31, 0.4, 1.06);
+    -moz-transition: all .45s cubic-bezier(0.33, 0.31, 0.4, 1.06);
+    -ms-transition: all .45s cubic-bezier(0.33, 0.31, 0.4, 1.06);
+    -o-transition: all .45s cubic-bezier(0.33, 0.31, 0.4, 1.06);
+    transition: all .45s cubic-bezier(0.33, 0.31, 0.4, 1.06);
 }
 
 .active:first-child {
-    border-radius: 5px;
-    border: 2px solid #39a492;
+    border-color: #39a492;
     color: #39a492;
-    padding: 6px 8px;
 }
 
 .active:hover {
     background-color: #39a492;
     color: black;
-    border: 2px solid #39a492 !important;
+    border-color: #39a492 !important;
 }
 
 .form-search {
@@ -126,9 +126,7 @@ body {
 }
 
 body .current a {
-    border-radius: 5px;
-    border: 2px solid #6b565d;
-    padding: 6px 8px;
+    border-color: #6b565d;
     box-shadow: 0 0px 20px 0 #6b565d;
 }
 
@@ -703,10 +701,8 @@ body .current a {
 
 @media(min-width:768px) {
     .menu-item {
-        margin: 0px;
-    }
-    .active:first-child {
-        padding: 3px 4px;
+        margin: 0 2px;
+        padding: 0 4px;
     }
     .search{
         padding: 0;
@@ -772,17 +768,14 @@ body .current a {
     .copyright-text{
         font-size: 14px;
     }
-    body .current a {
-        padding: 4px 2px;
-    }
 }
 
 /* laptop */
 
 @media(min-width:992px) {
     .menu-item {
-        padding: 8px 10px;
-        margin: 5px;
+        margin: 0 5px;
+        padding: 0 10px;
     }
     .search{
         padding-left: 15px;
@@ -790,9 +783,6 @@ body .current a {
     }
     .form-search input[type="text"] {
         font-size: 14px;
-    }
-    .active:first-child {
-        padding: 6px 8px;
     }
     .swiper-container,.container-content-slider {
         height: 660px;
@@ -854,18 +844,11 @@ body .current a {
     .button-contact {
         margin-top: 0;
     } 
-    body .current a {
-        padding: 6px 8px;
-    }
 }
 
 /* desktop */
 
 @media(min-width:1200px) {
-    
-    .active:first-child {
-        padding: 6px 8px;
-    }
     .title-slider {
         font-size: 36px;
     }
@@ -897,19 +880,12 @@ body .current a {
         width: 100%;
         overflow-x: scroll;
         white-space: nowrap;
-        padding: 10px 10px;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
-    .menu-item{
-        font-size: 16px;
-        padding: 2px 7px;
-    }
+
     .nav-menu {
         justify-content: start;
-    }
-    .active:first-child {
-        padding: 2px 7px;
     }
     .container-content-slider,.swiper-container{
         height: 270px;
@@ -1007,14 +983,7 @@ body .current a {
     .copyright-row {
         height: min-content;
     }  
-    body .current a {
-        border-radius: 5px;
-        border: 2px solid #6b565d;
-        padding: 2px 4px;
-    }
-    .nav-menu .menu-item:hover {
-       padding: 2px 7px;
-    }
+  
     /*----------Modal-----------*/
     .modal-content {
         width: 80%;
@@ -1030,4 +999,3 @@ body .current a {
 
     /*----------Modal-----------*/
 }
-
