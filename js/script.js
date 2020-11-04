@@ -30,13 +30,7 @@ $('#nav').onePageNav({
             modal.classList.remove("show")
                     animationModal.classList.remove("show-animate-modal")
     }
-
-    // function anime() {
-    //     animationModal.classList.add("show-animate-modal")
-    //         animationModal.classList.remove("hide-animate-modal")
-    // }
-
-   
+ 
     // modal.addEventListener("click",closeModal);
     modal.addEventListener("click", function(e){
         if (e.target === modal) {

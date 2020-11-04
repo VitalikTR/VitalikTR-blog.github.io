@@ -144,11 +144,9 @@ body .current a {
 
 .container-content-slider {
     position: relative;
-    z-index: 5;
     height: 660px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .swiper-pagination-bullet{
@@ -288,7 +286,10 @@ body .current a {
 .foto-member {
     display: block;
     position: relative;
-    height: 300px;
+    margin-bottom: -2px;
+}
+.foto{
+    width: 100%;
 }
 .member-info {
     padding: 20px;
