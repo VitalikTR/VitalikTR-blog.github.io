@@ -350,40 +350,45 @@ body .current a {
     cursor: pointer;
 }
 
-.portfolio-foto>img {
+/* .portfolio-foto>img {
     width: 100%;
-}
+} */
 
 .overlay-work {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     opacity: 0;
     visibility: hidden;
+}
+.image{
+    display: block;
+    width: 100%;
 }
 
 .plus {
     width: 100%;
-    height: 205px;
+    height: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: center;
 }
-
-.overlay-work .overlay-row {
-    display: block;
-}
-
-.portfolio-work {
+.portfolio-caption {
     background-color: #292f36;
-    padding: 22px 6px;
 }
 
 .subtitle-work {
     font-size: 18px;
     border: none;
     color: white;
+    text-align: center;
+    line-height: 18px;
+    padding: 22px 0;
 }
 
 .portfolio:hover .overlay-work {
@@ -753,9 +758,6 @@ body .current a {
         padding-top: 10px;
         justify-content: center;
     } 
-    .portfolio-foto img {
-        width: 300px;
-    }
     .button-show-more {
         width: fit-content;
         margin-top: 0;
@@ -829,13 +831,10 @@ body .current a {
     .text-about {
         padding-bottom: 40px;
     }
-     .social-items {
+    .social-items {
         padding-top: 0px;
         display: flex;
         justify-content: start;
-    }
-    .portfolio-foto img {
-        width: 290px;
     }
     .button-show-more {
         width: fit-content;
@@ -870,9 +869,6 @@ body .current a {
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 30px;
         left: 535px;
-    }
-    .portfolio-foto img {
-        width: 100%;
     }
     .service-item-row {
         margin-bottom: 130px;

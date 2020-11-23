@@ -38,6 +38,12 @@
 .row-social-team {
     display: flex;
 }
+.row-team {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 
 /* .col-md-4 {
     margin-bottom: 30px;
@@ -72,7 +78,7 @@
         display: flex;
         flex-direction: column;
     }
-    .about .col-sm-12 {
+    .col-sm-12 {
         width: 100%;
         padding-top: 10px;
     }
@@ -83,15 +89,18 @@
     .row-social-items {
         padding-bottom: 10px;
     }
-    .section [class*="col-"]{
-        padding-top: 10px;
-    }
     .row-work {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .slider .col-md-7 {
-        width: 100%;
+    .col-sm-6 {
+        width: 50%;
+    }
+    .section [class*="col-"]{
+        padding-top: 10px;
+    }
+    .row-team {
+        padding-bottom: 15px;
     }
     .contact-row {
         display: block;
@@ -108,16 +117,16 @@
         display: flex;
         flex-direction: row;
     }
-    .about .col-md-12{
+    .col-md-12{
         width: 100%;
     }
-    .about .col-md-7 {
+    .col-md-7 {
         width: 58.33%;
     }
-    .about .col-md-5 {
+    .col-md-5 {
         width: 41.67%;
     }
-    .about .col-md-11 {
+    .col-md-11 {
         padding-left: 0;
     }
     .row-about-box {
@@ -127,15 +136,18 @@
     .row-social-items {
         padding-bottom: 0px;
     }
+    .col-md-3{
+        width: 25%;
+    }
     .section [class*="col-"]{
         padding-top: 0px;
     }
-    .row-team {
-        flex-wrap: nowrap;
-        justify-content: space-between;
+    .col-md-4 {
+        width: 33.3333%;
+        margin-bottom: 30px;
     }
-    .slider .col-md-7 {
-        width: 58.33%;
+    .row-team{
+        padding-bottom: 100px;
     }
     .contact-row {
         display: flex;
@@ -177,20 +189,18 @@
         margin-bottom: 0px;
         flex-direction: column;
     }
-    .about .col-xs-11 {
+    .col-xs-11 {
         padding-top: 10px;
     }
     .row-social-items {
         padding-bottom: 10px;
     }
-    .row-team {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .section [class*="col-"]{
         padding-top: 10px;
     }
-    
+    .row-team {
+       padding-bottom: 10px;
+    }
     /* 
     .row-btn {
         flex-direction: row;
