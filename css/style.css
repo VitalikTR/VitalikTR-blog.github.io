@@ -226,19 +226,18 @@ body .current a {
 
 .about {
     background-color: white;
-   
 }
-
-.text-about {
-    margin-bottom: 35px;
+.text-about{
+    padding-bottom: 40px;
 }
-
+.text-about:last-child {
+    padding-bottom: 0;
+}
 .quote {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #8d8f92;
 }
-
 .square-number {
     width: 50px;
     font-family: 'Quattrocento Sans', sans-serif;
@@ -249,19 +248,16 @@ body .current a {
     background-color: #39a492;
     color: #ffe5e5;
 }
-
 .subtitle {
     font-size: 16px;
     padding-bottom: 10px;
     border: none;
     padding-left: 0;
 }
-
 .social-items {
    display: flex;
    overflow: hidden;
 }
-
 .social-icons {
     width: 60px;
     height: 60px;
@@ -274,7 +270,6 @@ body .current a {
 .social-icons:last-child {
     margin-right: 0px;
 }
-
 .social-icons:hover {
     background-color: #cfd5d9;
 }
@@ -291,73 +286,58 @@ body .current a {
 .foto-member {
     display: block;
     position: relative;
-    margin-bottom: -2px;
 }
-
 .foto {
     width: 100%;
+    display: block;
 }
-
-.member-info {
+.info-member{
     padding: 20px;
     background-color: #e1e6ea;
 }
-
-.text-foto {
-    font-size: 14px;
-    padding-bottom: 0;
+.name-member {
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #292f36;
+    border-left: none;
+    padding-left: 0;
 }
-
+.current-post {
+    font-size: 14px;
+}
 .overlay-work {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.40);
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     opacity: 0;
+    visibility: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
-.overlay-row {
-    display: flex;
-    margin: 0 auto;
-}
-
 .social-icons-work {
     width: 50px;
     height: 50px;
     background-color: #3a454d;
 }
-
-.overlay-row .social-icons:hover {
-    background-color: #4e5a62;
-}
-
 .team-member:hover .overlay-work {
     opacity: 1;
     visibility: visible;
 }
-
-.team-member:hover .member-info {
+.row-social-work .social-icons:hover {
+    background-color: #4e5a62;
+}
+.team-member:hover .info-member {
     background-color: #3a454d;
+}
+.team-member:hover .name-member {
     color: white;
 }
-
-.team-member:hover .subtitle {
+.team-member:hover .current-post {
     color: white;
-}
-
-.box {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.work {
-    padding-bottom: 100px;
 }
 
 /*---------------section team-----------------*/
@@ -767,22 +747,13 @@ body .current a {
         text-align: center;
         padding-bottom: 15px;
     }
-    .section {
-        padding-top: 20px;
-    }
-    .title-section {
-        margin-bottom: 20px;
-    }
-    .row-about-box {
-        margin-bottom: 10px;
+    .text-about {
+        padding-bottom: 15px;
     }
     .social-items {
         padding-top: 10px;
         justify-content: center;
-    }
-    .team-member {
-        margin-bottom: 10px;
-    }
+    } 
     .portfolio-foto img {
         width: 300px;
     }
@@ -797,7 +768,7 @@ body .current a {
     .features-image {
         width: 100%;
     }
-    .subtitle-features {
+    /* .subtitle-features {
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -813,7 +784,7 @@ body .current a {
     }
     .copyright-text {
         font-size: 14px;
-    }
+    } */
 }
 
 /* laptop */
@@ -856,26 +827,15 @@ body .current a {
     .title-section{
         margin-bottom: 60px;
     }
-    .row-about-box {
-        margin-bottom: 40px;
+    .text-about {
+        padding-bottom: 40px;
     }
-    .social-items {
+     .social-items {
         padding-top: 0px;
+        display: flex;
         justify-content: start;
     }
-    .social{
-        justify-content: start;
-    }
-    .foto-member {
-        height: 230px;
-    }
-    .foto {
-        height: 100%;
-    }
-    .team-member {
-        margin-bottom: 0;
-    }
-    .portfolio-foto img {
+     .portfolio-foto img {
         width: 290px;
     }
     .button-show-more {
@@ -911,9 +871,6 @@ body .current a {
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 30px;
         left: 535px;
-    }
-    .foto-member {
-        height: 300px;
     }
     .portfolio-foto img {
         width: 100%;
@@ -955,20 +912,12 @@ body .current a {
         margin-bottom: 10px;
         padding: 5px;
     }
-    .section{
-        padding-top: 20px;
-    }
     .title-section {
-        margin-bottom: 20px;
         font-size: 30px;
     }
-    .text{
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    .row-about-box {
-        margin-bottom: 0px;
-        flex-direction: column;
+    .text-about{
+        padding-bottom: 15px;
+        text-align: center
     }
     .square-number {
         width: 100%;
@@ -979,35 +928,12 @@ body .current a {
         text-align: center;
         padding-bottom: 2px;
     }
-    .social-items {
-        justify-content: center;
-    }
- 
-    .work {
-        padding-bottom: 5px;
-    }
-    .member-info {
-        padding: 10px;
+    .text-desc {
         text-align: center;
     }
-    .text-foto {
-        padding-bottom: 0;
-    }
-    .team-member {
-        margin-bottom: 5px;
-    }
-    .box {
-        display: flex;
-        flex-direction: row;
-    }
-    .social {
-        display: flex;
-        flex-direction: row;
+    .social-items {
         justify-content: center;
-    }
-    .overlay-team h2 {
-        margin-bottom: 20px;
-        font-size: 18px;
+        padding-top: 10px;
     }
     .portfolio {
         display: flex;
