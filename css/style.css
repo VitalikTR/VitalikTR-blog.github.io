@@ -280,7 +280,7 @@ body .current a {
     border: 1px solid #d0d5d9;
 }
 
-/*-------------  section work  ---------------*/
+/*-------------  section team  ---------------*/
 
 .foto-member {
     display: block;
@@ -304,7 +304,7 @@ body .current a {
 .current-post {
     font-size: 14px;
 }
-.overlay-work {
+.overlay-team {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -317,16 +317,16 @@ body .current a {
     align-items: center;
     justify-content: center;
 }
-.social-icons-work {
+.social-icons-team {
     width: 50px;
     height: 50px;
     background-color: #3a454d;
 }
-.team-member:hover .overlay-work {
+.team-member:hover .overlay-team {
     opacity: 1;
     visibility: visible;
 }
-.row-social-work .social-icons:hover {
+.row-social-team .social-icons:hover {
     background-color: #4e5a62;
 }
 .team-member:hover .info-member {
@@ -339,9 +339,9 @@ body .current a {
     color: white;
 }
 
-/*---------------section team-----------------*/
+/*---------------section work-----------------*/
 
-.team {
+.work {
     background-color: #3a454d;
 }
 
@@ -354,7 +354,7 @@ body .current a {
     width: 100%;
 }
 
-.overlay-team {
+.overlay-work {
     width: 100%;
     position: absolute;
     top: 0;
@@ -371,22 +371,22 @@ body .current a {
     justify-content: center;
 }
 
-.overlay-team .overlay-row {
+.overlay-work .overlay-row {
     display: block;
 }
 
-.portfolio-team {
+.portfolio-work {
     background-color: #292f36;
     padding: 22px 6px;
 }
 
-.subtitle-team {
+.subtitle-work {
     font-size: 18px;
     border: none;
     color: white;
 }
 
-.portfolio:hover .overlay-team {
+.portfolio:hover .overlay-work {
     opacity: 1;
     visibility: visible;
 }
@@ -834,7 +834,7 @@ body .current a {
         display: flex;
         justify-content: start;
     }
-     .portfolio-foto img {
+    .portfolio-foto img {
         width: 290px;
     }
     .button-show-more {

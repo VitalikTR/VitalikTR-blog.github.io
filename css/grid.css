@@ -35,7 +35,7 @@
 .row-about-box:last-child {
     margin-bottom: 0;
 }
-.row-social-work {
+.row-social-team {
     display: flex;
 }
 
@@ -80,6 +80,9 @@
         margin-bottom: 0px;
         padding-top: 10px;
     }
+    .row-social-items {
+        padding-bottom: 10px;
+    }
     .section [class*="col-"]{
         padding-top: 10px;
     }
@@ -121,10 +124,13 @@
         margin-bottom: 40px;
         padding-top: 0px;
     }
+    .row-social-items {
+        padding-bottom: 0px;
+    }
     .section [class*="col-"]{
         padding-top: 0px;
     }
-    .row-work {
+    .row-team {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
@@ -174,7 +180,10 @@
     .about .col-xs-11 {
         padding-top: 10px;
     }
-    .row-work {
+    .row-social-items {
+        padding-bottom: 10px;
+    }
+    .row-team {
         flex-wrap: wrap;
         justify-content: center;
     }
