@@ -191,29 +191,17 @@ body .current a {
     margin-top: 0 !important;
     margin-right: 10px;
 }
-
-.button {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    margin-top: 30px;
-    padding: 15px 25px;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .btn {
+    display: block;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: white;
-    background: none;
-    outline: none;
-    border: none;
     text-transform: uppercase;
-    cursor: pointer;
-    padding: 0;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .button-slider:hover {
@@ -344,16 +332,10 @@ body .current a {
 .work {
     background-color: #3a454d;
 }
-
 .portfolio-foto {
     position: relative;
     cursor: pointer;
 }
-
-/* .portfolio-foto>img {
-    width: 100%;
-} */
-
 .overlay-work {
     width: 100%;
     height: 100%;
@@ -390,23 +372,13 @@ body .current a {
     line-height: 18px;
     padding: 22px 0;
 }
-
 .portfolio:hover .overlay-work {
     opacity: 1;
     visibility: visible;
 }
-
-.portfolio-row {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.show-more-row {
-    justify-content: center;
-}
-
-.button-show-more:hover {
+.button-show-more:hover .btn {
     background-color: #39a492;
+    transition: 0.5s ease-in-out;
 }
 
 /*-------------  section service  ---------------*/
@@ -758,11 +730,6 @@ body .current a {
         padding-top: 10px;
         justify-content: center;
     } 
-    .button-show-more {
-        width: fit-content;
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
     .service-item-row {
         margin-bottom: 10px;
     }
@@ -835,11 +802,6 @@ body .current a {
         padding-top: 0px;
         display: flex;
         justify-content: start;
-    }
-    .button-show-more {
-        width: fit-content;
-        margin-top: 30px;
-        margin-bottom: 60px;
     }
     .service-item-row {
         margin-bottom: 70px;
@@ -933,13 +895,6 @@ body .current a {
     .portfolio {
         display: flex;
         justify-content: center;
-    }
-    .button-show-more {
-        flex: 0 0 82%;
-        margin: 5px 0 10px 0;
-    }
-    .show-more-row {
-        flex-direction: row;
     }
     .service-item-row {
         display: block;

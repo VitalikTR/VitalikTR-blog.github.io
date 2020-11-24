@@ -42,7 +42,16 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.portfolio-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.show-more-row {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
 
 
 /* .col-md-4 {
@@ -200,6 +209,12 @@
     }
     .row-team {
        padding-bottom: 10px;
+    }
+    .portfolio-row {
+        padding-bottom: 0;
+    }
+    .show-more-row {
+        padding-bottom: 10px;
     }
     /* 
     .row-btn {
