@@ -332,6 +332,9 @@ body .current a {
 .work {
     background-color: #3a454d;
 }
+.title-color-border{
+    border-left-color: #4e5a62;
+}
 .portfolio-foto {
     position: relative;
     cursor: pointer;
@@ -411,45 +414,23 @@ body .current a {
     background-image: url(../images/clock.png);
 }
 
-/* .text-service {
-    padding-bottom: 0;
-}
-
-.service-item-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 130px;
-} */
-
 /*-------------  section features  ---------------*/
 
 .features {
     background-color: #3a454d;
+    padding-bottom: 100px;
 }
-
-.title-section-feature, .subtitle-features, .text-features {
-    color: white;
+.features-foto {
+    width: 100%;
 }
-
-.title-section-feature {
-    border-left: 10px solid #4e5a62;
-}
-
-.features-item-block {
-    text-align: center;
-}
-
-.features-item-row {
-    display: flex;
-}
-
 .subtitle-features {
+    text-align: center;
+    color: white;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
 }
-
 .text-features {
-    padding-bottom: 90px;
+    padding-top: 30px;
 }
 
 /*---------------section contact-----------------*/
@@ -732,9 +713,11 @@ body .current a {
     .service-item-row {
         margin-bottom: 10px;
     }
-    .features-image {
-        width: 100%;
+    .features {
+        padding-bottom: 10px;
     }
+
+   
     /* .subtitle-features {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -805,13 +788,12 @@ body .current a {
     .service-item-row {
         margin-bottom: 70px;
     }
-    .subtitle-features {
-        padding-top: 50px;
-        padding-bottom: 20px;
+    .features {
+        padding-bottom: 100px;
     }
-    .text-features {
-        padding-bottom: 40px;
-    }
+   
+
+
     .contact-row {
         padding-top: 60px;
         padding-bottom: 100px;
@@ -834,9 +816,7 @@ body .current a {
     .service-item-row {
         margin-bottom: 130px;
     }
-    .text-features {
-        padding-bottom: 90px;
-    }
+  
 }
 
 /* mobile */
@@ -882,7 +862,6 @@ body .current a {
     }
     .subtitle {
         text-align: center;
-        padding-bottom: 2px;
     }
     .text-desc {
         text-align: center;
@@ -898,16 +877,20 @@ body .current a {
     .service-item-block {
         padding-bottom: 10px;
     }
-    .features-item-row {
-        display: block;
-    }
-    .features-image {
-        width: 100%;
-    }
-    .subtitle-features {
-        padding-top: 10px;
+    .features {
         padding-bottom: 10px;
     }
+    .subtitle-features {
+        padding-top: 15px;
+    }
+    .text-features {
+        padding-top: 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
     .contact-row {
         padding-top: 15px;
         padding-bottom: 15px;
