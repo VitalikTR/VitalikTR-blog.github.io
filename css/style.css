@@ -196,18 +196,20 @@ body .current a {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color: white;
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 5px;
+    cursor: pointer;
 }
-
 .button-slider:hover {
     background-color: #39a492;
     color: white;
     border-color: #39a492;
+}
+.btn:focus{
+    outline: none;
 }
 
 /*-------------  section about  -----------------*/
@@ -379,8 +381,13 @@ body .current a {
     opacity: 1;
     visibility: visible;
 }
-.button-show-more:hover .btn {
+.button-show-more{
+    color: white;
+}
+.button-show-more:hover {
     background-color: #39a492;
+    color: white;
+    border-color: #39a492;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
      -moz-transition: 0.5s ease-in-out;
@@ -418,7 +425,6 @@ body .current a {
 
 .features {
     background-color: #3a454d;
-    padding-bottom: 100px;
 }
 .features-foto {
     width: 100%;
@@ -435,45 +441,40 @@ body .current a {
 
 /*---------------section contact-----------------*/
 
-.map {
-    width: 100%;
+.contact {
+    padding-bottom: 100px;
 }
 
-.contact-row {
-    padding-top: 60px;
-    padding-bottom: 100px;
+.map {
+    width: 100%;
 }
 
 .subtitle-contact {
     font-size: 20px;
     border: none;
     padding-left: 0;
-    padding-bottom: 40px;
 }
 
 .text-contact {
     line-height: 1.4;
     font-size: 16px;
-    padding-bottom: 35px;
+    padding-top: 40px;
 }
 
-.text-contact:last-child {
-    padding-bottom: 0;
-}
-
-.button-contact {
+.btn-send-message {
     background-color: #39a492;
-    margin: 0;
     border-color: #39a492;
-    ;
+    color: white;
+    width: max-content;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
 }
-
-.button-contact:hover {
+.btn-send-message:hover {
     box-shadow: 0 0 10px 0 #39a492 inset, 0 0 10px 4px #39a492;
     background-color: #fff;
 }
 
-.button-contact:hover .btn-send-message {
+.btn-send-message:hover{
     color: #39a492;
 }
 
@@ -716,22 +717,24 @@ body .current a {
     .features {
         padding-bottom: 10px;
     }
-
-   
-    /* .subtitle-features {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .text-features {
+    .contact {
         padding-bottom: 0px;
     }
-    .contact-row {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .text-contact {
+        padding-top: 10px;
+    }
+    .subtitle-contact {
+        text-align: center;
     }
     .button-contact {
-        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
+
+   
+    /* 
+        
     .copyright-text {
         font-size: 14px;
     } */
@@ -772,7 +775,7 @@ body .current a {
         left: 430px;
     }
     .section {
-        padding-top: 80px;
+        padding-top: 60px;
     }
     .title-section{
         margin-bottom: 60px;
@@ -791,15 +794,19 @@ body .current a {
     .features {
         padding-bottom: 100px;
     }
-   
-
-
-    .contact-row {
-        padding-top: 60px;
+    .contact {
         padding-bottom: 100px;
     }
+    .text-contact {
+        padding-top: 40px;
+    }
+    .subtitle-contact {
+        text-align: left;
+    } 
     .button-contact {
-        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 }
 
@@ -888,17 +895,22 @@ body .current a {
         font-size: 14px;
         text-align: center;
     }
-
-
-
-    .contact-row {
-        padding-top: 15px;
+    .contact {
         padding-bottom: 15px;
     }
-    .subtitle-contact {
-        padding-bottom: 10px;
+    .contact-map {
+        padding-top: 15px;
+    }
+    .contact-information {
         text-align: center;
     }
+    .text-contact {
+        padding-top: 10px;
+    }
+
+
+  
+   
     .copyright-text {
         font-size: 10px;
     }

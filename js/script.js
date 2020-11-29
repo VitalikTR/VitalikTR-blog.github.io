@@ -2,10 +2,10 @@ $('#nav').onePageNav({
     currentClass:"current",
     scrollSpeed: 700,
     scrollThreshold: 0.5, 
-    scrollOffset: $('header').height(),   
+    scrollOffset: $('header').height() - 1,   
 })
 
-    let sendMessage = document.querySelectorAll(".button-contact");
+    let sendMessage = document.querySelectorAll(".btn-send-message");
     // console.log(sendMessage);
     let modal = document.querySelector(".modal-send-message")
     // console.log(modal);
