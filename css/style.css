@@ -219,6 +219,7 @@ body .current a {
 }
 .text-about{
     padding-bottom: 40px;
+    text-align: justify;
 }
 .text-about:last-child {
     padding-bottom: 0;
@@ -280,6 +281,7 @@ body .current a {
     width: 100%;
     display: block;
 }
+
 .info-member{
     padding: 20px;
     background-color: #e1e6ea;
@@ -316,7 +318,7 @@ body .current a {
     opacity: 1;
     visibility: visible;
 }
-.row-social-team .social-icons:hover {
+.social-team-row .social-icons:hover {
     background-color: #4e5a62;
 }
 .team-member:hover .info-member {
@@ -337,7 +339,11 @@ body .current a {
 .title-color-border{
     border-left-color: #4e5a62;
 }
+.portfolio {
+    padding-bottom: 15px;
+}
 .portfolio-foto {
+    width: 100%;
     position: relative;
     cursor: pointer;
 }
@@ -383,6 +389,8 @@ body .current a {
 }
 .button-show-more{
     color: white;
+    width: max-content;
+    margin: 0 auto;
 }
 .button-show-more:hover {
     background-color: #39a492;
@@ -398,7 +406,7 @@ body .current a {
 
 .service-item-block {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .service-item {
@@ -437,6 +445,7 @@ body .current a {
 }
 .text-features {
     padding-top: 30px;
+    text-align: justify;
 }
 
 /*---------------section contact-----------------*/
@@ -459,6 +468,7 @@ body .current a {
     line-height: 1.4;
     font-size: 16px;
     padding-top: 40px;
+    text-align: justify;
 }
 
 .btn-send-message {
@@ -466,8 +476,6 @@ body .current a {
     border-color: #39a492;
     color: white;
     width: max-content;
-    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-    width: -moz-max-content;    /* Firefox/Gecko */
 }
 .btn-send-message:hover {
     box-shadow: 0 0 10px 0 #39a492 inset, 0 0 10px 4px #39a492;
@@ -704,9 +712,6 @@ body .current a {
         padding-top: 10px;
         justify-content: center;
     } 
-    .service-item-row {
-        margin-bottom: 10px;
-    }
     .features {
         padding-bottom: 10px;
     }
@@ -722,10 +727,8 @@ body .current a {
     .subtitle-contact {
         text-align: center;
     }
-    .button-contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .btn-send-message {
+        margin: 0 auto;
     }
     .copyright-text {
         font-size: 14px;
@@ -767,10 +770,10 @@ body .current a {
         left: 430px;
     }
     .section {
-        padding-top: 60px;
+        padding: 85px 0 100px 0;
     }
     .title-section{
-        margin-bottom: 60px;
+        margin-bottom: 45px;
     }
     .text-about {
         padding-bottom: 40px;
@@ -779,15 +782,6 @@ body .current a {
         padding-top: 0px;
         display: flex;
         justify-content: start;
-    }
-    .service-item-row {
-        margin-bottom: 70px;
-    }
-    .features {
-        padding-bottom: 100px;
-    }
-    .contact {
-        padding-bottom: 100px;
     }
     .text-contact {
         padding-top: 40px;
@@ -800,6 +794,9 @@ body .current a {
         flex-direction: column;
         justify-content: flex-end;
     }
+    .btn-send-message {
+        margin: 0;
+    }
 }
 
 /* desktop */
@@ -811,9 +808,6 @@ body .current a {
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 30px;
         left: 535px;
-    }
-    .service-item-row {
-        margin-bottom: 130px;
     }
   
 }
@@ -885,7 +879,6 @@ body .current a {
     .text-features {
         padding-top: 12px;
         font-size: 14px;
-        text-align: center;
     }
     .contact {
         padding-bottom: 15px;
@@ -898,9 +891,16 @@ body .current a {
     }
     .text-contact {
         padding-top: 10px;
-    }  
+    }
+    .btn-send-message {
+        margin: 0 auto;
+    }
     .copyright-text {
         font-size: 12px;
+        text-align: center;
+    }
+    .copyright-social {
+        justify-content: center;
     }
    
     /*----------Modal-----------*/

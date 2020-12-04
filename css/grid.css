@@ -26,39 +26,36 @@
 .col-md-7 {
     z-index: 10;
 }
-.row-about-content {
+.about-content-row {
     display: flex;
 }
-.row-about-box{
+.about-box-row{
     margin-bottom: 40px;
 }
-.row-about-box:last-child {
+.about-box-row:last-child {
     margin-bottom: 0;
 }
-.row-social-team {
+.social-team-row {
     display: flex;
 }
-.row-team {
+.team-row {
     flex-wrap: wrap;
     justify-content: center;
 }
 .portfolio-row {
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 30px;
 }
 .show-more-row {
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
 }
-.row-service-box {
+.service-box-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 100px;
 }
-.row-features {
+.features-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,36 +83,35 @@
         justify-content: space-between;
         align-items: center;
     }
-    .section [class*="col-"]{
-        padding-top: 10px;
+    .section [class*="col-sm"]{
+        padding-top: 15px;
     }
-    .row-about-content {
+    .about-content-row {
         display: flex;
         flex-direction: column;
     }
     .col-sm-12 {
         width: 100%;
     }
-    .row-about-box {
+    .about-box-row {
         margin-bottom: 0px;
         padding-top: 10px;
     }
-    .row-social-items {
+    .social-items-row {
         padding-bottom: 10px;
     }
-    .row-work {
+    .work-row {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .show-more-row {
+        padding-bottom: 10px;
     }
     .col-sm-6 {
         width: 50%;
     }
-   
-    .row-team {
-        padding-bottom: 15px;
-    }
-    .row-service-box {
-        padding-bottom: 10px;
+    .service-item-row {
+        margin-bottom: 10px;
     }
     .col-sm-4{
         width: 30.3333%;
@@ -131,7 +127,7 @@
     .container {
         max-width: 960px;
     }
-    .row-about-content {
+    .about-content-row {
         display: flex;
         flex-direction: row;
     }
@@ -147,11 +143,11 @@
     .col-md-11 {
         padding-left: 0;
     }
-    .row-about-box {
+    .about-box-row {
         margin-bottom: 40px;
         padding-top: 0px;
     }
-    .row-social-items {
+    .social-items-row {
         padding-bottom: 0px;
     }
     .col-md-3{
@@ -160,11 +156,8 @@
     .col-md-4 {
         width: 33.3333%;
     }
-    .row-team{
-        padding-bottom: 100px;
-    }
-    .row-service-box {
-        padding-bottom: 100px;
+    .service-item-row {
+        margin-bottom: 70px;
     }
     .contact-row {
         padding-top: 60px;
@@ -180,6 +173,9 @@
     .container {
         max-width: 1170px;
     }
+    .service-item-row {
+        margin-bottom: 130px;
+    }
 }
 
 /* mobile */
@@ -192,41 +188,41 @@
         padding-top: 10px;
         padding-bottom: 10px;
         height: 120px;
+        text-align: center;
     }
-    .about .col-xs-12 {
+    .col-xs-12 {
         width: 100%;
-        padding-top: 10px;
     }
-    .row-about-content {
+    .about-content-row {
         display: flex;
         flex-direction: column;
     }
-    .row-about-box {
+    .about-box-row {
         margin-bottom: 0px;
         flex-direction: column;
     }
     .col-xs-11 {
         padding-top: 10px;
     }
-    .row-social-items {
+    .social-items-row {
         padding-bottom: 10px;
     }
-    .section [class*="col-"]{
-        padding-top: 10px;
+    .section [class*="col-xs"]{
+        padding-top: 15px;
     }
-    .row-team {
+    .team-row {
        padding-bottom: 10px;
-    }
-    .portfolio-row {
-        padding-bottom: 0;
     }
     .show-more-row {
         padding-bottom: 10px;
     }
-    .row-service-box {
+    .service-box-row {
         padding-bottom: 10px;
     }
     .contact-row {
         padding-top: 5px;
+    }
+    .copyright-row {
+        flex-wrap: wrap-reverse;
     }
 }
