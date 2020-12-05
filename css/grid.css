@@ -61,11 +61,11 @@
     justify-content: center;
 }
 .contact-row {
-    padding-top: 60px;
+    padding-top: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
-.copyright-row {
+.footer-row {
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -159,10 +159,7 @@
     .service-item-row {
         margin-bottom: 70px;
     }
-    .contact-row {
-        padding-top: 60px;
-     }
-     .col-md-6{
+    .col-md-6{
          width: 50%;
      }
 }
@@ -222,7 +219,7 @@
     .contact-row {
         padding-top: 5px;
     }
-    .copyright-row {
+    .footer-row {
         flex-wrap: wrap-reverse;
     }
 }
