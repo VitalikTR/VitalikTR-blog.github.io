@@ -23,9 +23,6 @@
     height: 80px;
     justify-content: space-around;
 }
-.col-md-7 {
-    z-index: 10;
-}
 .about-content-row {
     display: flex;
 }

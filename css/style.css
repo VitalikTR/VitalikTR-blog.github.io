@@ -134,7 +134,13 @@ body .current a {
 
 /*---------------  slider  -----------------*/
 
-.swiper-container {
+.title-slider {
+    color: white !important;
+    border: none !important;
+    padding-left: 0 !important;
+    padding-bottom: 30px;
+}
+/* .swiper-container {
     width: 100%;
     position: absolute;
 }
@@ -168,7 +174,23 @@ body .current a {
     padding-left: 0 !important;
     padding-bottom: 30px;
 }
+.button-slider {
+    margin-top: 0 !important;
+    margin-right: 10px;
+}
 
+.button-slider:hover {
+    background-color: #39a492;
+    color: white;
+    border-color: #39a492;
+}
+*/
+
+/*-------------  section about  -----------------*/
+
+.about {
+    background-color: white;
+}
 .title {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 36px;
@@ -185,37 +207,6 @@ body .current a {
     color: #b4b5b7;
     line-height: 1.6;
     font-size: 16px;
-}
-
-.button-slider {
-    margin-top: 0 !important;
-    margin-right: 10px;
-}
-.btn {
-    display: block;
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.button-slider:hover {
-    background-color: #39a492;
-    color: white;
-    border-color: #39a492;
-}
-.btn:focus{
-    outline: none;
-}
-
-/*-------------  section about  -----------------*/
-
-.about {
-    background-color: white;
 }
 .text-about{
     padding-bottom: 40px;
@@ -387,6 +378,21 @@ body .current a {
     opacity: 1;
     visibility: visible;
 }
+.btn {
+    display: block;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+} 
 .button-show-more{
     color: white;
     width: max-content;
@@ -688,10 +694,10 @@ body .current a {
     .form-search input[type="text"] {
         font-size: 11px;
     }
-    .swiper-container, .container-content-slider {
+    /* .swiper-container, .container-content-slider {
         height: 345px;
-    }
-    .button-slider {
+    } */
+    /* .button-slider {
         margin-bottom: 15px;
         margin-top: 0px;
         width: 100%;
@@ -704,7 +710,7 @@ body .current a {
     .text-slider {
         text-align: center;
         padding-bottom: 15px;
-    }
+    } */
     .text-about {
         padding-bottom: 15px;
     }
@@ -749,7 +755,7 @@ body .current a {
     .form-search input[type="text"] {
         font-size: 14px;
     }
-    .swiper-container, .container-content-slider {
+    /* .swiper-container, .container-content-slider {
         height: 660px;
     }
     .button-slider {
@@ -768,7 +774,7 @@ body .current a {
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 30px;
         left: 430px;
-    }
+    } */
     .section {
         padding: 85px 0 85px 0;
     }
@@ -802,13 +808,13 @@ body .current a {
 /* desktop */
 
 @media(min-width:1200px) {
-    .title-slider {
+    /* .title-slider {
         font-size: 36px;
     }
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 30px;
         left: 535px;
-    }
+    } */
   
 }
 
@@ -825,7 +831,7 @@ body .current a {
     .nav-menu {
         justify-content: start;
     }
-    .container-content-slider, .swiper-container {
+    /* .container-content-slider, .swiper-container {
         height: 270px;
     }
     .title-slider {
@@ -840,7 +846,7 @@ body .current a {
     .button-slider {
         margin-bottom: 10px;
         padding: 5px;
-    }
+    } */
     .title-section {
         font-size: 30px;
     }
