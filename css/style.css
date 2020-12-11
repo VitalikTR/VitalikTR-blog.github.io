@@ -134,28 +134,28 @@ body .current a {
 
 /*---------------  slider  -----------------*/
 
+.swiper-container {
+    width: 100%;
+    position: absolute;
+}
+.content-slider {
+    position: relative;
+    height: 660px;
+    display: flex;
+    align-items: center;
+}
+
 .title-slider {
     color: white !important;
     border: none !important;
     padding-left: 0 !important;
     padding-bottom: 30px;
 }
-/* .swiper-container {
-    width: 100%;
-    position: absolute;
-}
+/* 
 
-.img-slider {
-    max-width: 100%;
-    height: 100%;
-}
 
-.container-content-slider {
-    position: relative;
-    height: 660px;
-    display: flex;
-    align-items: center;
-}
+
+
 
 .swiper-pagination-bullet {
     width: 13px;
@@ -272,6 +272,10 @@ body .current a {
     width: 100%;
     display: block;
 }
+.image{
+    display: block;
+    width: 100%;
+}
 
 .info-member{
     padding: 20px;
@@ -349,10 +353,6 @@ body .current a {
     justify-content: space-between;
     opacity: 0;
     visibility: hidden;
-}
-.image{
-    display: block;
-    width: 100%;
 }
 
 .plus {
