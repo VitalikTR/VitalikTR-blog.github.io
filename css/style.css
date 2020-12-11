@@ -362,6 +362,10 @@ body .current a {
     align-items: center;
     justify-content: center;
 }
+.image-work {
+    border-radius: 50%;
+    background-color: #292f36;
+}
 .portfolio-caption {
     background-color: #292f36;
 }
@@ -377,6 +381,10 @@ body .current a {
 .portfolio:hover .overlay-work {
     opacity: 1;
     visibility: visible;
+}
+.portfolio:hover .image-work {
+    transition: all 1s cubic-bezier(0.18, 0.96, 0.29, 1.22);
+    transform: rotate(180deg);
 }
 .btn {
     display: block;
