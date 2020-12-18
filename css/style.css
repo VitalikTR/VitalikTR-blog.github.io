@@ -135,61 +135,52 @@ body .current a {
 /*---------------  slider  -----------------*/
 
 .slider-container-fluid {
-    width: 100%;
-    /* height: 660px; */
     position: absolute;
+    width: 100%;
+    height: 660px;
 }
+
 .slider-content-container {
     position: relative;
-    /* height: 660px; */
-    display: flex;
+    height: 660px;
     align-items: center;
-    z-index: 2;
+    display: flex;
+}
+.slider-content {
+    z-index: 20;
 }
 
 .slider-title {
     color: white !important;
     border: none !important;
     padding-left: 0 !important;
-    padding-bottom: 30px;
 }
-.slider-pagination{
-    z-index: 5;
+.slider-text{
+    padding-top: 30px;
 }
-/* 
-
-
-
-
-
-.swiper-pagination-bullet {
-    width: 13px;
-    height: 13px;
-    border: 2px solid white;
+.slider-wrapper-btn{
+    padding-top: 40px;
+    display: flex;
 }
-
-.row-btn {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.title-slider {
-    color: white !important;
-    border: none !important;
-    padding-left: 0 !important;
-    padding-bottom: 30px;
-}
-.button-slider {
-    margin-top: 0 !important;
+.slider-btn{
     margin-right: 10px;
+    color: white;
 }
-
-.button-slider:hover {
+.slider-btn:hover {
     background-color: #39a492;
     color: white;
     border-color: #39a492;
 }
-*/
+.slider-container-fluid .swiper-pagination-bullets{
+    bottom: 30px;
+    left: 535px;
+}
+
+.slider-container-fluid .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    border: 2px solid white;
+}
 
 /*-------------  section about  -----------------*/
 
