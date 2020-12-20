@@ -4,6 +4,9 @@ var swiper = new Swiper('.swiper-container', {
     initialSlide: 1,
     spaceBetween: 30,
     effect: 'fade',
+    fadeEffect: {
+      crossFade: false,
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

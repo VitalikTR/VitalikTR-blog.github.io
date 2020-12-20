@@ -83,6 +83,9 @@
     .section [class*="col-sm"]{
         padding-top: 15px;
     }
+    .col-sm-8{
+        width: 66.667%;
+    }
     .about-content-row {
         display: flex;
         flex-direction: column;
