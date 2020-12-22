@@ -127,6 +127,9 @@
     .container {
         max-width: 960px;
     }
+    .col-md-2 {
+        width: 16.667%;
+    }
     .about-content-row {
         display: flex;
         flex-direction: row;
