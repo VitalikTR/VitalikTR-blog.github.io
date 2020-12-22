@@ -407,10 +407,11 @@ body .current a {
 .btn:focus{
     outline: none;
 } 
-.button-show-more{
+.button-show-more {
     color: white;
-    width: max-content;
+    width: 155px;
     margin: 0 auto;
+    text-align: center;
 }
 .button-show-more:hover {
     background-color: #39a492;
@@ -495,7 +496,7 @@ body .current a {
     background-color: #39a492;
     border-color: #39a492;
     color: white;
-    width: max-content;
+    width: 145px;
 }
 .btn-send-message:hover {
     box-shadow: 0 0 10px 0 #39a492 inset, 0 0 10px 4px #39a492;
