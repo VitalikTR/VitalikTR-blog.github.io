@@ -5,7 +5,7 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
     effect: 'fade',
     fadeEffect: {
-      crossFade: false,
+      crossFade: true,
     },
     pagination: {
       el: '.swiper-pagination',

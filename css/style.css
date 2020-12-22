@@ -784,7 +784,7 @@ body .current a {
     .social-items {
         padding-top: 0px;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
     .text-contact {
         padding-top: 40px;
