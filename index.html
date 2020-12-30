@@ -25,30 +25,23 @@
                     </a>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 menu">
-                    <nav class="navigation hidden-menu">
+                    <nav>
                         <ul class="nav-menu" id="nav">
                             <li><a class="active menu-item" href="">Home</a></li>
                             <li><a class="current menu-item " href="#about">About</a></li>
-                            <li><a class="menu-item" href="#work">Work</a></li>
                             <li><a class="menu-item" href="#team">Team</a></li>
+                            <li><a class="menu-item" href="#work">Work</a></li>
                             <li><a class="menu-item" href="#service">Service</a></li>
                             <li><a class="menu-item" href="#features">Features</a></li>
                             <li><a class="menu-item" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="nav-mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-12 search">
-                    <div class="row-search">
-                        <form class="form-search" action="" method="">
-                            <input type="text" name="search" placeholder="search" id="">
-                            <button class="btn-search"></button>
-                        </form>
-                    </div>
+                    <form class="form-search" action="" method="">
+                        <input type="text" name="search" placeholder="search" id="">
+                        <button class="btn-search"></button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -58,9 +51,15 @@
         <div class="slider-container-fluid swiper-container ">
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img class="img-slider" src="images/moon.png" alt="image"></div>
-                <div class="swiper-slide"><img class="img-slider" src="images/slider.png" alt="image"></div>
-                <div class="swiper-slide"><img class="img-slider" src="images/ozero.png" alt="image"></div>
+                <div class="swiper-slide">
+                    <div class="slide-img slide-1"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img slide-2"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img slide-3"></div>
+                </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination swiper-pagination-white"></div>
@@ -82,7 +81,7 @@
         </div>
     </section>
     <main>
-        <section class="about" id="about">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="row title-section-row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -100,10 +99,12 @@
                             pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio
                             convallis eget. vel sodales arcu vestibulum</p>
                     </div>
-                    <div class="text-number col-md-5">
-                        <div class="row box">
-                            <div class="square-numb col-md-1">01</div>
-                            <div class="text-box col-md-4">
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <div class="row about-box-row">
+                            <div class="col-md-1 col-sm- col-xs- ">
+                                <div class="square-number">01</div>
+                            </div>
+                            <div class="col-md-11 col-sm- col-xs-11">
                                 <h4 class="title subtitle">Dedication to the customers</h4>
                                 <p class="text text-desc">Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae
                                     tristique nisi, vitae ullamcorper risus.</p>
@@ -145,21 +146,15 @@
                         <div class="social-icons"><a href="https://www.behance.net/" target="_blanc"
                                 title="behance"><img src="images/behance.png" alt=""></a></div>
                     </div>
-                    <div class="social-icons"><a href=""><img src="images/twitter.png" alt=""></a></div>
-                    <div class="social-icons"><a href=""><img src="images/google.png" alt=""></a></div>
-                    <div class="social-icons"><a href=""><img src="images/drrible.png" alt=""></a></div>
-                    <div class="social-icons"><a href=""><img src="images/behance.png" alt=""></a></div>
                 </div>
             </div>
         </section>
-        <div class="sep"></div>
-        <section class="work" id="work">
+        <section class="sep"></section>
+        <section class="team section" id="team">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="title title-section">
-                            Meet the team.
-                        </h1>
+                <div class="row title-section-row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="title title-section">Meet the team.</h1>
                     </div>
                 </div>
                 <div class="row team-row">
@@ -181,13 +176,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="member-info">
-                                <h5 class="subtitle">Victor Bromley</h5>
-                                <h6 class="text text-foto">CEO and Founder</h6>
+                            <div class="info-member">
+                                <div class="title name-member">Victor Bromley</div>
+                                <div class="text current-post">CEO and Founder</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="team-member">
                             <div class="foto-member"><img class="image" src="images/foto4.png" alt="">
                                 <div class="overlay-team">
@@ -205,13 +200,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="member-info">
-                                <h5 class="subtitle">Paul Torres</h5>
-                                <h6 class="text text-foto">Head of Development</h6>
+                            <div class="info-member">
+                                <div class="title name-member">Paul Torres</div>
+                                <div class="text current-post">CEO and Founder</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="team-member">
                             <div class="foto-member"><img class="image" src="images/foto3.png" alt="">
                                 <div class="overlay-team">
@@ -229,13 +224,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="member-info">
-                                <h5 class="subtitle">Judith Gillette</h5>
-                                <h6 class="text text-foto">Graphic Desinger</h6>
+                            <div class="info-member">
+                                <div class="title name-member">Judith Gilette</div>
+                                <div class="text current-post">CEO and Founder</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="team-member">
                             <div class="foto-member"><img class="image" src="images/foto5.png" alt="">
                                 <div class="overlay-team">
@@ -253,16 +248,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="member-info">
-                                <h5 class="subtitle">Ivan Reed</h5>
-                                <h6 class="text text-foto">Client Service Director</h6>
+                            <div class="info-member">
+                                <div class="title name-member">Ivan Reed</div>
+                                <div class="text current-post">CEO and Founder</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="team" id="team">
+        <section class="work section" id="work">
             <div class="container">
                 <div class="row title-section-row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -284,77 +279,62 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio">
-                            <div class="portfolio-foto"><img src="images/img (11).png" alt="">
-                                <div class="overlay-team">
-                                    <div class="overlay-row">
-                                        <div class="plus"><a href=""><img src="images/plus.png" alt=""></a>
-                                        </div>
-                                        <div class="portfolio-team">
-                                            <h4 class="title subtitle-team">Partnership guidlines</h4>
-                                        </div>
-                                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio">
+                        <div class="portfolio-foto"><img class="image" src="images/img (11).png" alt="">
+                            <div class="overlay-work">
+                                <div class="plus">
+                                    <a href=""><img class="image image-work" src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4 class="title subtitle-work">Partnership guidlines</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio">
-                            <div class="portfolio-foto"><img src="images/img (10).png" alt="">
-                                <div class="overlay-team">
-                                    <div class="overlay-row">
-                                        <div class="plus"><a href=""><img src="images/plus.png" alt=""></a>
-                                        </div>
-                                        <div class="portfolio-team">
-                                            <h4 class="title subtitle-team">Partnership guidlines</h4>
-                                        </div>
-                                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio">
+                        <div class="portfolio-foto"><img class="image" src="images/img (10).png" alt="">
+                            <div class="overlay-work">
+                                <div class="plus">
+                                    <a href=""><img class="image image-work" src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4 class="title subtitle-work">Partnership guidlines</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio">
-                            <div class="portfolio-foto"><img src="images/img (9).png" alt="">
-                                <div class="overlay-team">
-                                    <div class="overlay-row">
-                                        <div class="plus"><a href=""><img src="images/plus.png" alt=""></a>
-                                        </div>
-                                        <div class="portfolio-team">
-                                            <h4 class="title subtitle-team">Partnership guidlines</h4>
-                                        </div>
-                                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio">
+                        <div class="portfolio-foto"><img class="image" src="images/img (9).png" alt="">
+                            <div class="overlay-work">
+                                <div class="plus">
+                                    <a href=""><img class="image image-work" src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4 class="title subtitle-work">Partnership guidlines</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio">
-                            <div class="portfolio-foto"><img src="images/img (8).png" alt="">
-                                <div class="overlay-team">
-                                    <div class="overlay-row">
-                                        <div class="plus"><a href=""><img src="images/plus.png" alt=""></a>
-                                        </div>
-                                        <div class="portfolio-team">
-                                            <h4 class="title subtitle-team">Partnership guidlines</h4>
-                                        </div>
-                                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio">
+                        <div class="portfolio-foto"><img class="image" src="images/img (8).png" alt="">
+                            <div class="overlay-work">
+                                <div class="plus">
+                                    <a href=""><img class="image image-work" src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4 class="title subtitle-work">Partnership guidlines</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio">
-                            <div class="portfolio-foto"><img src="images/img (7).png" alt="">
-                                <div class="overlay-team">
-                                    <div class="overlay-row">
-                                        <div class="plus"><a href=""><img src="images/plus.png" alt=""></a>
-                                        </div>
-                                        <div class="portfolio-team">
-                                            <h4 class="title subtitle-team">Partnership guidlines</h4>
-                                        </div>
-                                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio">
+                        <div class="portfolio-foto"><img class="image" src="images/img (7).png" alt="">
+                            <div class="overlay-work">
+                                <div class="plus">
+                                    <a href=""><img class="image image-work" src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4 class="title subtitle-work">Partnership guidlines</h4>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +347,7 @@
                 </div>
             </div>
         </section>
-        <section class="service" id="service">
+        <section class="service section" id="service">
             <div class="container">
                 <div class="row title-section-row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -428,7 +408,7 @@
                 </div>
             </div>
         </section>
-        <section class="features" id="features">
+        <section class="features section" id="features">
             <div class="container">
                 <div class="row title-section-row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -468,7 +448,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="row title-section-row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -494,10 +474,8 @@
                         <p class="text text-contact">Cras fermentum elit quis magna congue, <span class="quote">vel
                                 sodales </span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus .</p>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="button button-contact">
-                            <button class="btn btn-send-message">Send message</button>
-                        </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 button-contact">
+                        <button class="btn btn-send-message">Send message</button>
                     </div>
                 </div>
             </div>
@@ -548,10 +526,12 @@
                 <div class="btn-modal">
                     <button class="btn btn-send-message-modal">Send</button>
                 </div>
+
             </form>
         </div>
     </div>
     <!-- End modal -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="swiper/swiper-bundle.js"></script>
     <script src="swiper/swiper-bundle.min.js"></script>
