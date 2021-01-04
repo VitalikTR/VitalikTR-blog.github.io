@@ -201,6 +201,13 @@ body .current a {
     height: 13px;
     border: 2px solid white;
 }
+/*----------Mobile menu-----------*/
+
+.nav-mobile-menu{
+    display:none;
+}
+
+
 
 /*-------------  section about  -----------------*/
 
@@ -864,16 +871,17 @@ body .current a {
 /* mobile */
 
 @media(max-width:767px) {
-    .menu {
+    /* .menu {
         width: 100%;
         overflow-x: scroll;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-    }
+    } */
     .nav-menu {
         justify-content: start;
     }
+  
     .slider-container-fluid, .slider-content-container {
         height: 245px;
     }
@@ -960,6 +968,53 @@ body .current a {
     .copyright-social {
         justify-content: center;
     }
+   
+    /*----------Mobile menu-----------*/
+
+    .nav-mobile-menu{
+        display:block;
+        width:15px;
+        height:15px;
+        position:relative;
+    }
+    .nav-mobile-menu span{
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .25s ease-in-out;
+    }
+    .nav-mobile-menu span:nth-child(1){
+        top:3px;
+    }
+    .nav-mobile-menu span:nth-child(2){
+        top:7px;
+    }
+    .nav-mobile-menu span:nth-child(3){
+        bottom:3px;
+    }
+    .navigation{
+        position:fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 280px;
+        max-width: 280px;
+        transition: all 500ms ease-in-out;
+        transform: translateX(20%);
+    }
+    .hidden-menu{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .search{
+        display: none;
+    }
+    
+    
+   
+   
     /*----------Modal-----------*/
     .modal-content {
         width: 80%;
@@ -972,5 +1027,4 @@ body .current a {
         width: 100%;
         margin-bottom: 10px;
     }
-    /*----------Modal-----------*/
 }

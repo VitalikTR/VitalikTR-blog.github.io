@@ -17,12 +17,7 @@
     padding-right: 15px;
 }
 
-.header-row {
-    flex-direction: column;
-    align-items: center;
-    height: 80px;
-    justify-content: space-around;
-}
+
 
 .about-content-row {
     display: flex;
@@ -90,6 +85,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 80px;
     }
     .section [class*="col-sm"] {
         padding-top: 15px;
@@ -196,13 +192,10 @@
         width: 100%;
     }
     .header-row {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        height: 120px;
-        text-align: center;
-    }
-    .col-xs-12 {
-        width: 100%;
+        padding: 10px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .about-content-row {
         display: flex;
