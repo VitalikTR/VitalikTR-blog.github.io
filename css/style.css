@@ -924,7 +924,7 @@ body .current a {
     }
     .social-items {
         justify-content: center;
-        padding-top: 10px;
+        width: 100%;
     }
     .portfolio {
         display: flex;
