@@ -1009,6 +1009,13 @@ body .current a {
     .search{
         display: none;
     }
+    .navigation .nav-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation li{
+        padding-bottom: 10px;
+    }
 
     /*----------Active menu-----------*/
 
@@ -1028,17 +1035,16 @@ body .current a {
         visibility: visible;
         top: 41px;
         transform: translateX(0);
-        padding-left: 10px;
+        overflow: auto;
     }
     .navigation.active-menu .nav-menu{
         flex-direction: column;
         align-items: center;
     }
     .navigation.active-menu li{
-       padding-bottom: 10px;
+        padding-bottom: 10px;
     }
     
-   
    
     /*----------Modal-----------*/
     .modal-content {
